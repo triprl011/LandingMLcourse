@@ -23,15 +23,21 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Copy index.html from templates to root
-        run: cp templates/index.html .
+        run: |
+          cp templates/index.html .
+          ls -la  # Проверяем, что файл появился
 
-      - name: List files for debug
-        run: ls -la  # 👈 Это временный шаг для проверки
+      - name: Create deployment directory
+        run: |
+          mkdir -p deploy
+          cp index.html deploy/
+          cp -r static deploy/
+          ls -la deploy/  # Проверяем содержимое
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3  # 👈 Оставляем v3, это специальное действие
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'  # 👈 Убедитесь, что указан именно корень (.)
+          path: './deploy'  # 👈 Загружаем специальную папку
 
       - name: Deploy to GitHub Pages
         id: deployment

@@ -17,17 +17,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4  # Изменено с v3 на v4
+        uses: actions/checkout@v4
 
       - name: Setup Pages
-        uses: actions/configure-pages@v4  # Изменено с v3 на v4
+        uses: actions/configure-pages@v4
 
       - name: Copy index.html from templates to root
         run: cp templates/index.html .
 
+      - name: List files for debug
+        run: ls -la  # 👈 Это временный шаг для проверки
+
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3  # Это специальное действие для GitHub Pages, его версия пока актуальна
+        uses: actions/upload-pages-artifact@v3  # 👈 Оставляем v3, это специальное действие
+        with:
+          path: '.'  # 👈 Убедитесь, что указан именно корень (.)
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4  # Изменено с v2 на v4
+        uses: actions/deploy-pages@v4

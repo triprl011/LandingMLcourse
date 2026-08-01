@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  landing:
+    build: .
+    ports:
+      - "8080:5000"   # Локально будет доступно на http://localhost:8080
+    volumes:
+      - ./leads.json:/app/leads.json  # Данные сохраняются на хост-машине
+    restart: unless-stopped

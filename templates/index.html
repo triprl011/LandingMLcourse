@@ -355,6 +355,86 @@
             border-color: #a3e635;
         }
 
+                /* ===== УЛУЧШЕННЫЙ БЛОК С ОТЗЫВАМИ ===== */
+        .mentor-reviews {
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .mentor-reviews h4 {
+            font-size: 1.3rem;
+            color: #ffffff;
+            margin-bottom: 24px;
+            text-align: center;
+            letter-spacing: 0.05em;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .review-item {
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            transition: 0.3s ease;
+            backdrop-filter: blur(4px);
+        }
+
+        .review-item:hover {
+            border-color: #a3e635;
+            background: rgba(255, 255, 255, 0.06);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(163, 230, 53, 0.05);
+        }
+
+        .review-item .review-author {
+            font-weight: 600;
+            color: #a3e635;
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .review-item .review-author .stars {
+            color: #fbbf24;
+            letter-spacing: 2px;
+        }
+
+        .review-item .review-text {
+            color: #cbd5e1;
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+
+        .review-item .review-date {
+            color: #64748b;
+            font-size: 0.75rem;
+        }
+
+        /* Адаптация для мобильных */
+        @media (max-width: 768px) {
+            .reviews-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .review-item {
+                padding: 18px;
+            }
+
+            .review-item .review-text {
+                font-size: 0.9rem;
+            }
+        }
+
         /* ===== ОСТАЛЬНЫЕ БЛОКИ (без изменений) ===== */
         .audience-grid {
             display: grid;
@@ -764,6 +844,58 @@
                 font-size: 0.7rem;
             }
         }
+        /* ===== КОМПАКТНЫЙ БЛОК ПОМОЩНИКА ===== */
+    .assistant-compact {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-top: 20px;
+        padding: 14px 18px;
+        background: rgba(255, 255, 255, 0.04);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        transition: 0.3s ease;
+    }
+
+    .assistant-compact:hover {
+        background: rgba(255, 255, 255, 0.07);
+        border-color: rgba(163, 230, 53, 0.15);
+    }
+
+    .assistant-compact-photo {
+        flex-shrink: 0;
+    }
+
+    .assistant-compact-photo img {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid rgba(163, 230, 53, 0.2);
+    }
+
+    .assistant-compact-info {
+        flex: 1;
+    }
+
+    .assistant-compact-name {
+        font-weight: 600;
+        color: #ffffff;
+        font-size: 0.95rem;
+    }
+
+    .assistant-compact-title {
+        font-size: 0.8rem;
+        color: #a3e635;
+        font-weight: 500;
+    }
+
+    .assistant-compact-desc {
+        font-size: 0.8rem;
+        color: #94a3b8;
+        line-height: 1.4;
+        margin-top: 2px;
+    }
     </style>
 </head>
 <body>
@@ -776,7 +908,9 @@
             <a href="#" class="header-logo">ML-Интенсив</a>
             <nav class="header-nav">
                 <a href="#about">О курсе</a>
+                <a href="#forwhoom">Для кого?</a>
                 <a href="#mentor">Ментор</a>
+
                 <a href="#program">Программа</a>
                 <a href="#pricing">Тарифы</a>
                 <a href="#contacts" class="btn-small">Записаться</a>
@@ -819,7 +953,7 @@
     <!-- ============================================ -->
     <!-- БЛОК 2: ДЛЯ КОГО ЭТОТ КУРС                  -->
     <!-- ============================================ -->
-    <section class="section">
+    <section class="section" id="forwhoom">
         <div class="container">
             <h2 class="section-title">Для кого этот курс</h2>
             <p class="section-subtitle">
@@ -843,6 +977,88 @@
                     <p>Начнете говорить с инженерами на одном языке, оценивать сроки и участвовать в обсуждении архитектуры.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+
+
+    <!-- ============================================ -->
+<!-- НОВЫЙ БЛОК: О МЕНТОРЕ И ПОМОЩНИКЕ            -->
+<!-- ============================================ -->
+<section class="section" id="mentor" style="background: rgba(255,255,255,0.02);">
+    <div class="container">
+        <h2 class="section-title">О менторе</h2>
+        <p class="section-subtitle">
+            Ваш наставник на протяжении всего курса
+        </p>
+
+        <div class="mentor-grid">
+            <!-- Фото ментора -->
+            <div class="mentor-photo">
+                <img src="../static/img_1.png" alt="Фото ментора" />
+            </div>
+
+            <!-- Информация о менторе -->
+            <div class="mentor-info">
+                <h3>Виталий Терехов</h3>
+                <div class="mentor-title">Senior Data Scientist, опыт 8+ лет</div>
+                <p>
+                    Автор курса и главный ментор. Работал в крупных IT-компаниях, внедрял ML-решения для задач
+                    прогнозирования, рекомендаций и компьютерного зрения. Учит не просто коду, а подходу к решению
+                    реальных бизнес-задач.
+                </p>
+                <p style="margin-top: 12px;">
+                    🎓 Выпускник МФТИ. Ведет активный блог о Data Science, помогает студентам находить работу в IT.
+                </p>
+
+                <!-- ===== ПОМОЩНИК (внутри того же блока) ===== -->
+                <div class="assistant-compact">
+                    <div class="assistant-compact-photo">
+                        <img src="../static/img.png" alt="Фото помощника" />
+                    </div>
+                    <div class="assistant-compact-info">
+                        <div class="assistant-compact-name">Настя Москва</div>
+                        <div class="assistant-compact-title">ML-инженер, куратор курса</div>
+                        <div class="assistant-compact-desc">Помогает с домашими заданиями, разборами кода и отвечает на вопросы в чате.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Блок с отзывами -->
+            <div class="mentor-reviews">
+                <h4>⭐ Отзывы учеников</h4>
+                <div class="reviews-grid">
+
+                    <!-- Отзыв 1 -->
+                    <div class="review-item">
+                        <div class="review-author">
+                            <span>Дмитрий Р.</span>
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <div class="review-text">
+                            "Отличная программа! Понравился баланс теории и практики. Кураторы всегда на связи, помогают с домашними заданиями. Рекомендую всем, кто хочет войти в Data Science."
+                        </div>
+                        <div class="review-date">Выпуск 2025</div>
+                    </div>
+
+                    <!-- Отзыв 2 -->
+                    <div class="review-item">
+                        <div class="review-author">
+                            <span>Екатерина М.</span>
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <div class="review-text">
+                            "Изначально боялась, что не потяну, но ментор поддерживал на каждом этапе. Очень помогли живые вебинары и разбор ошибок. Уже получила оффер в крупную компанию!"
+                        </div>
+                        <div class="review-date">Выпуск 2026</div>
+                    </div>
+
+                </div>
+                <p style="margin-top: 20px; text-align: center; color: #64748b; font-size: 0.85rem;">
+                    * Все отзывы настоящих выпускников
+                </p>
+            </div>
+        </div>
         </div>
     </section>
 
@@ -934,61 +1150,8 @@
         </div>
     </section>
 
-    <!-- ============================================ -->
-    <!-- НОВЫЙ БЛОК: О МЕНТОРЕ                       -->
-    <!-- ============================================ -->
-    <section class="section" id="mentor" style="background: rgba(255,255,255,0.02);">
-        <div class="container">
-            <h2 class="section-title">О менторе</h2>
-            <p class="section-subtitle">
-                Ваш наставник на протяжении всего курса
-            </p>
 
-            <div class="mentor-grid">
-                <!-- Фото ментора -->
-                <div class="mentor-photo">
-                    <!-- ЗАМЕНИТЕ ССЫЛКУ НА СВОЁ ФОТО -->
-<!--                    <img src="https://via.placeholder.com/400x500/1a1f2e/a3e635?text=Фото+ментора" alt="Фото ментора" />-->
-                    <img src="../static/cat.jpg" alt="Фото ментора" />
-                </div>
 
-                <!-- Информация о менторе -->
-                <div class="mentor-info">
-                    <h3>Алексей Смирнов</h3>
-                    <div class="mentor-title">Senior Data Scientist, опыт 8+ лет</div>
-                    <p>
-                        Автор курса и главный ментор. Работал в крупных IT-компаниях, внедрял ML-решения для задач
-                        прогнозирования, рекомендаций и компьютерного зрения. Учит не просто коду, а подходу к решению
-                        реальных бизнес-задач.
-                    </p>
-                    <p style="margin-top: 12px;">
-                        🎓 Выпускник МФТИ. Ведет активный блог о Data Science, помогает студентам находить работу в IT.
-                    </p>
-                </div>
-
-                <!-- Блок с отзывом (скриншот) -->
-                <div class="mentor-review">
-                    <h4>⭐⭐⭐⭐⭐ Отзывы учеников</h4>
-                    <!-- ЗАМЕНИТЕ ССЫЛКУ НА СВОЙ СКРИНШОТ ОТЗЫВА -->
-                    <img
-                        src="../static/student_feedback.png"
-                        alt="Скриншот отзыва ученика"
-                        class="review-screenshot"
-                        onclick="window.open(this.src, '_blank')"
-                    />
-                    <img
-                        src="../static/student_feedback.png"
-                        alt="Скриншот отзыва ученика"
-                        class="review-screenshot"
-                        onclick="window.open(this.src, '_blank')"
-                    />
-                    <p style="margin-top: 12px; color: #94a3b8; font-size: 0.85rem;">
-                        * Нажмите на скриншот, чтобы увеличить
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- ============================================ -->
     <!-- БЛОК 5: ПРОГРАММА КУРСА                     -->
@@ -1184,13 +1347,12 @@
     <!-- ============================================ -->
     <footer class="footer">
         <div class="container">
-            <p>
-                ООО “Ваша компания” · ИНН 1234567890<br />
-                Дата старта потока: 29 июля 2026
-            </p>
+<!--            <p>-->
+<!--                ООО “Ваша компания” · ИНН 1234567890<br />-->
+<!--                Дата старта потока: 29 июля 2026-->
+<!--            </p>-->
             <p style="margin-top: 8px;">
-                <a href="#">Политика конфиденциальности</a> ·
-                <a href="#">Договор оферты</a>
+                <a href="#">2022-2026 copyright ©</a> ·
             </p>
         </div>
     </footer>

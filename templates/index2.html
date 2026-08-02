@@ -54,85 +54,7 @@
             margin: 0 auto 48px;
         }
 
-        /* ===== СТИЛИ ДЛЯ HEADER ===== */
-        .sticky-header {
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            background: rgba(10, 14, 26, 0.92);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-            padding: 12px 0;
-            transition: all 0.3s ease;
-        }
-
-        .sticky-header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .header-logo {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: #a3e635;
-            letter-spacing: 0.05em;
-            text-decoration: none;
-            white-space: nowrap;
-        }
-
-        .header-logo:hover {
-            color: #bef264;
-        }
-
-        .header-nav {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px 16px;
-            align-items: center;
-        }
-
-        .header-nav a {
-            color: #94a3b8;
-            text-decoration: none;
-            font-size: 0.85rem;
-            font-weight: 500;
-            transition: color 0.3s ease;
-            letter-spacing: 0.3px;
-            padding: 4px 0;
-            border-bottom: 2px solid transparent;
-        }
-
-        .header-nav a:hover {
-            color: #a3e635;
-            border-bottom-color: #a3e635;
-        }
-
-        .header-nav .btn-small {
-            background: #a3e635;
-            color: #0a0e1a;
-            padding: 8px 20px;
-            border-radius: 40px;
-            font-size: 0.8rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            border: none;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            border-bottom: none !important;
-        }
-
-        .header-nav .btn-small:hover {
-            background: #bef264;
-            transform: translateY(-2px);
-            box-shadow: 0 0 30px rgba(163, 230, 53, 0.3);
-        }
-
-        /* ===== КНОПКИ ===== */
+        /* ===== КНОПКИ (КИСЛОТНО-ЗЕЛЕНЫЕ) ===== */
         .btn {
             display: inline-block;
             padding: 14px 36px;
@@ -178,7 +100,7 @@
             text-align: center;
         }
 
-        /* ===== HERO ===== */
+        /* ===== HERO С АНИМАЦИЕЙ ФОРМУЛ ===== */
         .hero {
             position: relative;
             padding: 100px 0 120px;
@@ -282,80 +204,7 @@
             gap: 16px;
         }
 
-        /* ===== БЛОК "О МЕНТОРЕ" ===== */
-        .mentor-grid {
-            display: grid;
-            grid-template-columns: 1fr 1.5fr 1.5fr;
-            gap: 40px;
-            align-items: start;
-            margin-top: 16px;
-        }
-
-        .mentor-photo {
-            text-align: center;
-        }
-
-        .mentor-photo img {
-            width: 100%;
-            max-width: 260px;
-            border-radius: 20px;
-            border: 3px solid rgba(163, 230, 53, 0.3);
-            box-shadow: 0 0 60px rgba(163, 230, 53, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .mentor-photo img:hover {
-            transform: scale(1.02);
-            border-color: #a3e635;
-            box-shadow: 0 0 80px rgba(163, 230, 53, 0.2);
-        }
-
-        .mentor-info h3 {
-            font-size: 1.8rem;
-            color: #ffffff;
-            margin-bottom: 8px;
-        }
-
-        .mentor-info .mentor-title {
-            color: #a3e635;
-            font-weight: 600;
-            margin-bottom: 16px;
-        }
-
-        .mentor-info p {
-            color: #94a3b8;
-            font-size: 1rem;
-            line-height: 1.8;
-        }
-
-        .mentor-review {
-            background: rgba(255, 255, 255, 0.04);
-            border-radius: 16px;
-            padding: 24px;
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            backdrop-filter: blur(4px);
-        }
-
-        .mentor-review h4 {
-            color: #ffffff;
-            margin-bottom: 12px;
-            font-size: 1rem;
-        }
-
-        .mentor-review .review-screenshot {
-            width: 100%;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .mentor-review .review-screenshot:hover {
-            transform: scale(1.01);
-            border-color: #a3e635;
-        }
-
-        /* ===== ОСТАЛЬНЫЕ БЛОКИ (без изменений) ===== */
+        /* ===== ОСТАЛЬНЫЕ БЛОКИ ===== */
         .audience-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -628,6 +477,34 @@
             resize: vertical;
         }
 
+        .footer {
+            background: #060a14;
+            color: #64748b;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .footer a {
+            color: #94a3b8;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #a3e635;
+        }
+
+        .badge-green {
+            background: #a3e635;
+            color: #0a0e1a;
+            padding: 4px 16px;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            display: inline-block;
+        }
+
         .form-message {
             margin-top: 16px;
             padding: 12px;
@@ -649,52 +526,8 @@
             border: 1px solid rgba(255, 64, 129, 0.3);
         }
 
-        .footer {
-            background: #060a14;
-            color: #64748b;
-            padding: 40px 0;
-            text-align: center;
-            font-size: 0.9rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .footer a {
-            color: #94a3b8;
-            text-decoration: none;
-        }
-
-        .footer a:hover {
-            color: #a3e635;
-        }
-
         /* ===== АДАПТИВ ===== */
-        @media (max-width: 1024px) {
-            .mentor-grid {
-                grid-template-columns: 1fr;
-                gap: 32px;
-            }
-
-            .mentor-photo img {
-                max-width: 200px;
-            }
-        }
-
         @media (max-width: 768px) {
-            .sticky-header .container {
-                flex-direction: column;
-                align-items: center;
-                gap: 8px;
-            }
-
-            .header-nav {
-                justify-content: center;
-                gap: 6px 12px;
-            }
-
-            .header-nav a {
-                font-size: 0.75rem;
-            }
-
             .hero {
                 padding: 60px 0 80px;
                 min-height: auto;
@@ -726,15 +559,6 @@
             .formula-bright {
                 font-size: 2rem !important;
             }
-
-            .mentor-grid {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .mentor-photo img {
-                max-width: 180px;
-            }
         }
 
         @media (max-width: 480px) {
@@ -750,44 +574,15 @@
                 padding: 12px 28px;
                 font-size: 0.9rem;
             }
-
-            .header-nav {
-                gap: 4px 8px;
-            }
-
-            .header-nav a {
-                font-size: 0.7rem;
-            }
-
-            .header-nav .btn-small {
-                padding: 6px 14px;
-                font-size: 0.7rem;
-            }
         }
     </style>
 </head>
 <body>
 
     <!-- ============================================ -->
-    <!-- STICKY HEADER С НАВИГАЦИЕЙ                   -->
-    <!-- ============================================ -->
-    <header class="sticky-header">
-        <div class="container">
-            <a href="#" class="header-logo">ML-Интенсив</a>
-            <nav class="header-nav">
-                <a href="#about">О курсе</a>
-                <a href="#mentor">Ментор</a>
-                <a href="#program">Программа</a>
-                <a href="#pricing">Тарифы</a>
-                <a href="#contacts" class="btn-small">Записаться</a>
-            </nav>
-        </div>
-    </header>
-
-    <!-- ============================================ -->
     <!-- БЛОК 1: HERO С АНИМАЦИЕЙ ФОРМУЛ             -->
     <!-- ============================================ -->
-    <section class="hero" id="about">
+    <section class="hero">
         <div class="formula-bg">
             <div class="formula">E = mc²</div>
             <div class="formula">∫ eˣ dx = eˣ + C</div>
@@ -809,7 +604,12 @@
                     Освойте Data Science за короткий срок. Учебные проекты и кейсы, подготовка к собеседованиям и трудоустройству.
                 </p>
                 <div class="hero-buttons">
+                    <!-- ===== КНОПКА "СВЯЗАТЬСЯ С МЕНЕДЖЕРОМ" ===== -->
+                    <!-- ВЫБЕРИТЕ ОДИН ИЗ ВАРИАНТОВ: -->
+                    <!-- Вариант 1: Telegram -->
                     <a href="https://t.me/terehinvi" target="_blank" class="btn btn-primary">Связаться с менеджером</a>
+                    <!-- Вариант 2: ВКонтакте (замените ссылку) -->
+                    <!-- <a href="https://vk.com/ваш_менеджер" target="_blank" class="btn btn-primary">Связаться с менеджером</a> -->
                     <a href="#pricing" class="btn btn-outline">Выбрать тариф</a>
                 </div>
             </div>
@@ -935,65 +735,9 @@
     </section>
 
     <!-- ============================================ -->
-    <!-- НОВЫЙ БЛОК: О МЕНТОРЕ                       -->
-    <!-- ============================================ -->
-    <section class="section" id="mentor" style="background: rgba(255,255,255,0.02);">
-        <div class="container">
-            <h2 class="section-title">О менторе</h2>
-            <p class="section-subtitle">
-                Ваш наставник на протяжении всего курса
-            </p>
-
-            <div class="mentor-grid">
-                <!-- Фото ментора -->
-                <div class="mentor-photo">
-                    <!-- ЗАМЕНИТЕ ССЫЛКУ НА СВОЁ ФОТО -->
-<!--                    <img src="https://via.placeholder.com/400x500/1a1f2e/a3e635?text=Фото+ментора" alt="Фото ментора" />-->
-                    <img src="../static/cat.jpg" alt="Фото ментора" />
-                </div>
-
-                <!-- Информация о менторе -->
-                <div class="mentor-info">
-                    <h3>Алексей Смирнов</h3>
-                    <div class="mentor-title">Senior Data Scientist, опыт 8+ лет</div>
-                    <p>
-                        Автор курса и главный ментор. Работал в крупных IT-компаниях, внедрял ML-решения для задач
-                        прогнозирования, рекомендаций и компьютерного зрения. Учит не просто коду, а подходу к решению
-                        реальных бизнес-задач.
-                    </p>
-                    <p style="margin-top: 12px;">
-                        🎓 Выпускник МФТИ. Ведет активный блог о Data Science, помогает студентам находить работу в IT.
-                    </p>
-                </div>
-
-                <!-- Блок с отзывом (скриншот) -->
-                <div class="mentor-review">
-                    <h4>⭐⭐⭐⭐⭐ Отзывы учеников</h4>
-                    <!-- ЗАМЕНИТЕ ССЫЛКУ НА СВОЙ СКРИНШОТ ОТЗЫВА -->
-                    <img
-                        src="../static/student_feedback.png"
-                        alt="Скриншот отзыва ученика"
-                        class="review-screenshot"
-                        onclick="window.open(this.src, '_blank')"
-                    />
-                    <img
-                        src="../static/student_feedback.png"
-                        alt="Скриншот отзыва ученика"
-                        class="review-screenshot"
-                        onclick="window.open(this.src, '_blank')"
-                    />
-                    <p style="margin-top: 12px; color: #94a3b8; font-size: 0.85rem;">
-                        * Нажмите на скриншот, чтобы увеличить
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
     <!-- БЛОК 5: ПРОГРАММА КУРСА                     -->
     <!-- ============================================ -->
-    <section class="section" id="program" style="background: rgba(255,255,255,0.02);">
+    <section class="section" style="background: rgba(255,255,255,0.02);">
         <div class="container">
             <h2 class="section-title">Программа курса</h2>
             <p class="section-subtitle">
@@ -1154,18 +898,19 @@
     <!-- ============================================ -->
     <!-- БЛОК 7: ФОРМА СВЯЗИ                        -->
     <!-- ============================================ -->
-    <section class="section" id="contacts" style="background: rgba(255,255,255,0.02);">
+    <section class="section" style="background: rgba(255,255,255,0.02);">
         <div class="container">
             <h2 class="section-title">Остались вопросы?</h2>
             <p class="section-subtitle">
                 Заполните форму, и менеджер свяжется с вами, чтобы ответить на все вопросы.
             </p>
             <div class="form-box">
+                <!-- ===== ФОРМА ===== -->
                 <form id="contactForm" action="#" method="POST">
                     <input type="text" id="userName" name="name" placeholder="Ваше имя" required />
                     <input type="email" id="userEmail" name="email" placeholder="Email" required />
                     <input type="tel" id="userPhone" name="phone" placeholder="+7 (___) ___-__-__" />
-                    <input type="text" id="userTelegram" name="telegram" placeholder="@telegram" />
+                    <input type="text" id="userTelegram" name="telegram" placeholder="@ telegram" />
                     <textarea id="userMessage" name="message" placeholder="Ваш вопрос" required></textarea>
                     <button type="submit" class="btn btn-primary btn-block">Отправить</button>
                 </form>
@@ -1173,7 +918,7 @@
 
                 <p style="margin-top: 16px; font-size: 0.9rem; color: #94a3b8;">
                     Или напишите менеджеру в Telegram:
-                    <a href="https://t.me/terehinvi" target="_blank" style="color: #a3e635; font-weight: 500;">@terehinvi</a>
+<!--                    <a href="https://t.me/ваш_менеджер" target="_blank" style="color: #a3e635; font-weight: 500;">@ваш_менеджер</a>-->
                 </p>
             </div>
         </div>
@@ -1184,14 +929,14 @@
     <!-- ============================================ -->
     <footer class="footer">
         <div class="container">
-            <p>
-                ООО “Ваша компания” · ИНН 1234567890<br />
-                Дата старта потока: 29 июля 2026
-            </p>
-            <p style="margin-top: 8px;">
-                <a href="#">Политика конфиденциальности</a> ·
-                <a href="#">Договор оферты</a>
-            </p>
+<!--            <p>-->
+<!--                ООО “Ваша компания” · ИНН 1234567890<br />-->
+<!--                Дата старта потока: 29 июля 2026-->
+<!--            </p>-->
+<!--            <p style="margin-top: 8px;">-->
+<!--                <a href="#">Политика конфиденциальности</a> ·-->
+<!--                <a href="#">Договор оферты</a>-->
+<!--            </p>-->
         </div>
     </footer>
 
@@ -1242,9 +987,10 @@
             // 2. ФОРМА ОТПРАВКИ В TELEGRAM И ПОЧТУ
             // ==========================================
 
-            const BOT_TOKEN = '8801941059:AAHqTSy2UoFi7Ew3AEnv6h9XVwhbC8b_FZI';
-            const CHAT_ID = '8378833882';
-            const MANAGER_EMAIL = 'vitalii.grebnev@mail.ru';
+            // ⚙️ НАСТРОЙКИ (ЗАПОЛНИТЕ СВОИМИ ДАННЫМИ):
+            const BOT_TOKEN = '8801941059:AAHqTSy2UoFi7Ew3AEnv6h9XVwhbC8b_FZI'; // Токен вашего бота
+            const CHAT_ID = '8378833882'; // Ваш Telegram ID
+            const MANAGER_EMAIL = 'vitalii.grebnev@mail.ru'; // Email менеджера
 
             const form = document.getElementById('contactForm');
             const messageDiv = document.getElementById('formMessage');
@@ -1258,24 +1004,28 @@
                 const telegram = document.getElementById('userTelegram').value.trim();
                 const message = document.getElementById('userMessage').value.trim();
 
+                // Валидация
                 if (!name || !email || !message) {
                     showMessage('Пожалуйста, заполните все обязательные поля.', 'error');
                     return;
                 }
 
+                // Формируем текст для Telegram
                 const text = `📩 *Новая заявка с сайта!*\n\n` +
                     `👤 *Имя:* ${name}\n` +
                     `📧 *Email:* ${email}\n` +
                     `📞 *Телефон:* ${phone || 'не указан'}\n` +
-                    `📱 *Telegram:* ${telegram || 'не указан'}\n` +
+                    `📞 *Телеграм:* ${telegram || 'не указан'}\n` +
                     `💬 *Вопрос:*\n${message}`;
 
+                // Формируем письмо для почты (через mailto)
                 const mailtoLink =
                     `mailto:${MANAGER_EMAIL}?subject=Новая заявка с сайта от ${encodeURIComponent(name)}&body=${encodeURIComponent(
-                        `Имя: ${name}\nEmail: ${email}\nТелефон: ${phone || 'не указан'}\nTelegram: ${telegram || 'не указан'}\n\nВопрос:\n${message}`
+                        `Имя: ${name}\nEmail: ${email}\nТелефон: ${phone || 'не указан'}\n\nВопрос:\n${message}`
                     )}`;
 
                 try {
+                    // Отправляем в Telegram через бота
                     const tgResponse = await fetch(
                         `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
                             method: 'POST',
@@ -1293,15 +1043,19 @@
                     const tgData = await tgResponse.json();
 
                     if (tgData.ok) {
+                        // Открываем почтовый клиент
                         window.open(mailtoLink, '_blank');
+
                         showMessage('✅ Заявка отправлена! Менеджер свяжется с вами в ближайшее время.', 'success');
                         form.reset();
                     } else {
+                        // Если Telegram не отправился, пробуем только почту
                         window.open(mailtoLink, '_blank');
                         showMessage('⚠️ Заявка отправлена на почту. Менеджер свяжется с вами.', 'success');
                         form.reset();
                     }
                 } catch (error) {
+                    // Если ошибка — пробуем хотя бы почту
                     window.open(mailtoLink, '_blank');
                     showMessage('⚠️ Заявка отправлена на почту. Менеджер свяжется с вами.', 'success');
                     form.reset();
@@ -1313,6 +1067,7 @@
                 messageDiv.className = 'form-message ' + type;
                 messageDiv.style.display = 'block';
 
+                // Скрываем сообщение через 10 секунд
                 setTimeout(() => {
                     messageDiv.style.display = 'none';
                     messageDiv.className = 'form-message';

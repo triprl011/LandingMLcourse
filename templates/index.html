@@ -1,1020 +1,3 @@
-<!--&lt;!&ndash;<!DOCTYPE html>&ndash;&gt;-->
-<!--&lt;!&ndash;<html lang="ru">&ndash;&gt;-->
-<!--&lt;!&ndash;<head>&ndash;&gt;-->
-<!--&lt;!&ndash;    <meta charset="UTF-8">&ndash;&gt;-->
-<!--&lt;!&ndash;    <meta name="viewport" content="width=device-width, initial-scale=1.0">&ndash;&gt;-->
-<!--&lt;!&ndash;    <title>ML-интенсив — Старт в Data Science</title>&ndash;&gt;-->
-<!--&lt;!&ndash;    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">&ndash;&gt;-->
-<!--&lt;!&ndash;</head>&ndash;&gt;-->
-<!--&lt;!&ndash;<body>&ndash;&gt;-->
-<!--&lt;!&ndash;    &lt;!&ndash; HERO БЛОК &ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;    <section class="hero">&ndash;&gt;-->
-<!--&lt;!&ndash;        <div class="container">&ndash;&gt;-->
-<!--&lt;!&ndash;            <h1>Старт в <span class="highlight">Machine Learning</span> за 4 недели</h1>&ndash;&gt;-->
-<!--&lt;!&ndash;            <p class="subtitle">Соберите своё первое ML-решение с нуля. Без скучной теории — только практика.</p>&ndash;&gt;-->
-
-<!--&lt;!&ndash;            <div class="offer-grid">&ndash;&gt;-->
-<!--&lt;!&ndash;                <div class="offer-item">🧠 12 живых вебинаров с разбором кода</div>&ndash;&gt;-->
-<!--&lt;!&ndash;                <div class="offer-item">📁 5 реальных датасетов для портфолио</div>&ndash;&gt;-->
-<!--&lt;!&ndash;                <div class="offer-item">👨‍🏫 Поддержка куратора в закрытом чате</div>&ndash;&gt;-->
-<!--&lt;!&ndash;                <div class="offer-item">📜 Сертификат о прохождении</div>&ndash;&gt;-->
-<!--&lt;!&ndash;            </div>&ndash;&gt;-->
-
-<!--&lt;!&ndash;            &lt;!&ndash; КНОПКА "К МЕНЕДЖЕРУ НАСТЕ" (Telegram) &ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;            <a href="https://t.me/your_manager_nastya" target="_blank" class="btn-primary">&ndash;&gt;-->
-<!--&lt;!&ndash;                👩‍💼 Связаться с Настей →&ndash;&gt;-->
-<!--&lt;!&ndash;            </a>&ndash;&gt;-->
-
-<!--&lt;!&ndash;            <p class="small-text">Настя ответит на все вопросы и поможет подобрать тариф</p>&ndash;&gt;-->
-<!--&lt;!&ndash;        </div>&ndash;&gt;-->
-<!--&lt;!&ndash;    </section>&ndash;&gt;-->
-
-<!--&lt;!&ndash;    &lt;!&ndash; БЛОК "О КУРСЕ" &ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;    <section class="about">&ndash;&gt;-->
-<!--&lt;!&ndash;        <div class="container">&ndash;&gt;-->
-<!--&lt;!&ndash;            <h2>Почему этот курс?</h2>&ndash;&gt;-->
-<!--&lt;!&ndash;            <div class="features">&ndash;&gt;-->
-<!--&lt;!&ndash;                <div class="feature">&ndash;&gt;-->
-<!--&lt;!&ndash;                    <h3>⚡ Реальный опыт</h3>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <p>Вы напишете код, который можно сразу добавить в резюме.</p>&ndash;&gt;-->
-<!--&lt;!&ndash;                </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                <div class="feature">&ndash;&gt;-->
-<!--&lt;!&ndash;                    <h3>🎯 Без воды</h3>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <p>Только то, что нужно для первых проектов в IT-компании.</p>&ndash;&gt;-->
-<!--&lt;!&ndash;                </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                <div class="feature">&ndash;&gt;-->
-<!--&lt;!&ndash;                    <h3>🔄 Гибкий график</h3>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <p>Все записи остаются в личном кабинете навсегда.</p>&ndash;&gt;-->
-<!--&lt;!&ndash;                </div>&ndash;&gt;-->
-<!--&lt;!&ndash;            </div>&ndash;&gt;-->
-
-<!--&lt;!&ndash;            &lt;!&ndash; ВТОРАЯ КНОПКА ДЛЯ ПОДСТРАХОВКИ &ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;            <div style="text-align: center; margin-top: 40px;">&ndash;&gt;-->
-<!--&lt;!&ndash;                <a href="https://t.me/your_manager_nastya" target="_blank" class="btn-secondary">&ndash;&gt;-->
-<!--&lt;!&ndash;                    💬 Написать Насте в Telegram&ndash;&gt;-->
-<!--&lt;!&ndash;                </a>&ndash;&gt;-->
-<!--&lt;!&ndash;            </div>&ndash;&gt;-->
-<!--&lt;!&ndash;        </div>&ndash;&gt;-->
-<!--&lt;!&ndash;    </section>&ndash;&gt;-->
-
-<!--&lt;!&ndash;    &lt;!&ndash; ФОРМА ЗАХВАТА (Дублер, если не хотят идти в TG) &ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;    <section class="form-section">&ndash;&gt;-->
-<!--&lt;!&ndash;        <div class="container">&ndash;&gt;-->
-<!--&lt;!&ndash;            <h2>Оставьте контакты — Настя пришлёт программу</h2>&ndash;&gt;-->
-<!--&lt;!&ndash;            <form id="leadForm">&ndash;&gt;-->
-<!--&lt;!&ndash;                <input type="text" id="name" placeholder="Ваше имя" required>&ndash;&gt;-->
-<!--&lt;!&ndash;                <input type="email" id="email" placeholder="Email" required>&ndash;&gt;-->
-<!--&lt;!&ndash;                <button type="submit" class="btn-primary">Получить программу</button>&ndash;&gt;-->
-<!--&lt;!&ndash;            </form>&ndash;&gt;-->
-<!--&lt;!&ndash;            <div id="formMessage" class="message"></div>&ndash;&gt;-->
-<!--&lt;!&ndash;        </div>&ndash;&gt;-->
-<!--&lt;!&ndash;    </section>&ndash;&gt;-->
-
-<!--&lt;!&ndash;    <footer>&ndash;&gt;-->
-<!--&lt;!&ndash;        <div class="container">&ndash;&gt;-->
-<!--&lt;!&ndash;            <p>© 2026 ML-интенсив. Все права защищены.</p>&ndash;&gt;-->
-<!--&lt;!&ndash;        </div>&ndash;&gt;-->
-<!--&lt;!&ndash;    </footer>&ndash;&gt;-->
-
-<!--&lt;!&ndash;    <script src="{{ url_for('static', filename='script.js') }}"></script>&ndash;&gt;-->
-<!--&lt;!&ndash;</body>&ndash;&gt;-->
-<!--&lt;!&ndash;</html>&ndash;&gt;-->
-
-<!--<!DOCTYPE html>-->
-<!--<html lang="ru">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8" />-->
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
-<!--    <title>Курс по ML — Ваше Название</title>-->
-<!--    <style>-->
-<!--        /* ===== ОБЩИЕ СТИЛИ ===== */-->
-<!--        * {-->
-<!--            margin: 0;-->
-<!--            padding: 0;-->
-<!--            box-sizing: border-box;-->
-<!--        }-->
-
-<!--        body {-->
-<!--            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;-->
-<!--            background-color: #ffffff;-->
-<!--            color: #1e293b;-->
-<!--            line-height: 1.6;-->
-<!--        }-->
-
-<!--        .container {-->
-<!--            max-width: 1200px;-->
-<!--            margin: 0 auto;-->
-<!--            padding: 0 24px;-->
-<!--        }-->
-
-<!--        .section {-->
-<!--            padding: 80px 0;-->
-<!--            border-bottom: 1px solid #f1f5f9;-->
-<!--        }-->
-
-<!--        .section:last-child {-->
-<!--            border-bottom: none;-->
-<!--        }-->
-
-<!--        .section-title {-->
-<!--            font-size: 2.5rem;-->
-<!--            font-weight: 700;-->
-<!--            text-align: center;-->
-<!--            margin-bottom: 16px;-->
-<!--            letter-spacing: -0.02em;-->
-<!--        }-->
-
-<!--        .section-subtitle {-->
-<!--            text-align: center;-->
-<!--            font-size: 1.2rem;-->
-<!--            color: #64748b;-->
-<!--            max-width: 700px;-->
-<!--            margin: 0 auto 48px;-->
-<!--        }-->
-
-<!--        /* ===== КНОПКИ ===== */-->
-<!--        .btn {-->
-<!--            display: inline-block;-->
-<!--            padding: 14px 36px;-->
-<!--            border-radius: 40px;-->
-<!--            font-weight: 600;-->
-<!--            font-size: 1rem;-->
-<!--            text-decoration: none;-->
-<!--            transition: all 0.2s ease;-->
-<!--            border: none;-->
-<!--            cursor: pointer;-->
-<!--        }-->
-
-<!--        .btn-primary {-->
-<!--            background: #2563eb;-->
-<!--            color: #ffffff;-->
-<!--            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);-->
-<!--        }-->
-
-<!--        .btn-primary:hover {-->
-<!--            background: #1d4ed8;-->
-<!--            transform: translateY(-2px);-->
-<!--            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.35);-->
-<!--        }-->
-
-<!--        .btn-outline {-->
-<!--            background: transparent;-->
-<!--            color: #1e293b;-->
-<!--            border: 2px solid #e2e8f0;-->
-<!--        }-->
-
-<!--        .btn-outline:hover {-->
-<!--            border-color: #2563eb;-->
-<!--            color: #2563eb;-->
-<!--        }-->
-
-<!--        .btn-block {-->
-<!--            display: block;-->
-<!--            width: 100%;-->
-<!--            text-align: center;-->
-<!--        }-->
-
-<!--        /* ===== ШАПКА / HERO ===== */-->
-<!--        .hero {-->
-<!--            padding: 60px 0 80px;-->
-<!--            background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);-->
-<!--            border-bottom: 1px solid #e2e8f0;-->
-<!--        }-->
-
-<!--        .hero-grid {-->
-<!--            display: grid;-->
-<!--            grid-template-columns: 1fr 1fr;-->
-<!--            gap: 60px;-->
-<!--            align-items: center;-->
-<!--        }-->
-
-<!--        .hero-content h1 {-->
-<!--            font-size: 3.2rem;-->
-<!--            font-weight: 800;-->
-<!--            line-height: 1.2;-->
-<!--            letter-spacing: -0.03em;-->
-<!--            margin-bottom: 20px;-->
-<!--        }-->
-
-<!--        .hero-content h1 span {-->
-<!--            background: linear-gradient(135deg, #2563eb, #7c3aed);-->
-<!--            -webkit-background-clip: text;-->
-<!--            -webkit-text-fill-color: transparent;-->
-<!--            background-clip: text;-->
-<!--        }-->
-
-<!--        .hero-desc {-->
-<!--            font-size: 1.2rem;-->
-<!--            color: #475569;-->
-<!--            margin-bottom: 32px;-->
-<!--            max-width: 500px;-->
-<!--        }-->
-
-<!--        .hero-buttons {-->
-<!--            display: flex;-->
-<!--            flex-wrap: wrap;-->
-<!--            gap: 16px;-->
-<!--            margin-top: 8px;-->
-<!--        }-->
-
-<!--        .hero-image {-->
-<!--            background: #e2e8f0;-->
-<!--            border-radius: 20px;-->
-<!--            height: 320px;-->
-<!--            display: flex;-->
-<!--            align-items: center;-->
-<!--            justify-content: center;-->
-<!--            color: #94a3b8;-->
-<!--            font-size: 1.2rem;-->
-<!--            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="%2394a3b8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h.01"/><path d="M15 9h.01"/><path d="M9 15h6"/></svg>');-->
-<!--            background-repeat: no-repeat;-->
-<!--            background-position: center;-->
-<!--            background-size: 80px;-->
-<!--        }-->
-
-<!--        /* ===== ДЛЯ КОГО КУРС ===== */-->
-<!--        .audience-grid {-->
-<!--            display: grid;-->
-<!--            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));-->
-<!--            gap: 24px;-->
-<!--            margin-top: 16px;-->
-<!--        }-->
-
-<!--        .audience-card {-->
-<!--            background: #f8fafc;-->
-<!--            padding: 28px 24px;-->
-<!--            border-radius: 16px;-->
-<!--            border-left: 4px solid #2563eb;-->
-<!--            transition: 0.2s;-->
-<!--        }-->
-
-<!--        .audience-card:hover {-->
-<!--            background: #f1f5f9;-->
-<!--            transform: translateY(-4px);-->
-<!--        }-->
-
-<!--        .audience-card h3 {-->
-<!--            font-size: 1.2rem;-->
-<!--            margin-bottom: 8px;-->
-<!--        }-->
-
-<!--        .audience-card p {-->
-<!--            color: #475569;-->
-<!--            font-size: 0.95rem;-->
-<!--        }-->
-
-<!--        /* ===== ТРЕБОВАНИЯ ===== */-->
-<!--        .requirements-grid {-->
-<!--            display: grid;-->
-<!--            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));-->
-<!--            gap: 24px;-->
-<!--            margin-top: 16px;-->
-<!--        }-->
-
-<!--        .req-item {-->
-<!--            background: #f8fafc;-->
-<!--            padding: 20px;-->
-<!--            border-radius: 12px;-->
-<!--            text-align: center;-->
-<!--        }-->
-
-<!--        .req-item h4 {-->
-<!--            font-weight: 600;-->
-<!--            margin-bottom: 8px;-->
-<!--            color: #0f172a;-->
-<!--        }-->
-
-<!--        .req-item ul {-->
-<!--            list-style: none;-->
-<!--            font-size: 0.9rem;-->
-<!--            color: #475569;-->
-<!--        }-->
-
-<!--        .req-item ul li::before {-->
-<!--            content: "• ";-->
-<!--            color: #2563eb;-->
-<!--        }-->
-
-<!--        /* ===== ФОРМАТ ===== */-->
-<!--        .format-grid {-->
-<!--            display: grid;-->
-<!--            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));-->
-<!--            gap: 32px;-->
-<!--            margin-top: 16px;-->
-<!--        }-->
-
-<!--        .format-card {-->
-<!--            background: #f8fafc;-->
-<!--            padding: 28px;-->
-<!--            border-radius: 16px;-->
-<!--        }-->
-
-<!--        .format-card h3 {-->
-<!--            font-size: 1.3rem;-->
-<!--            margin-bottom: 12px;-->
-<!--        }-->
-
-<!--        .format-card ul {-->
-<!--            list-style: none;-->
-<!--            padding: 0;-->
-<!--        }-->
-
-<!--        .format-card ul li {-->
-<!--            padding: 6px 0;-->
-<!--            border-bottom: 1px solid #e2e8f0;-->
-<!--            font-size: 0.95rem;-->
-<!--        }-->
-
-<!--        .format-card ul li:last-child {-->
-<!--            border-bottom: none;-->
-<!--        }-->
-
-<!--        /* ===== ПРОГРАММА ===== */-->
-<!--        .module {-->
-<!--            background: #f8fafc;-->
-<!--            border-radius: 16px;-->
-<!--            padding: 28px 32px;-->
-<!--            margin-bottom: 20px;-->
-<!--            border: 1px solid #e2e8f0;-->
-<!--        }-->
-
-<!--        .module-header {-->
-<!--            display: flex;-->
-<!--            justify-content: space-between;-->
-<!--            align-items: center;-->
-<!--            cursor: pointer;-->
-<!--            flex-wrap: wrap;-->
-<!--        }-->
-
-<!--        .module-header h3 {-->
-<!--            font-size: 1.3rem;-->
-<!--            font-weight: 600;-->
-<!--        }-->
-
-<!--        .module-header span {-->
-<!--            background: #2563eb;-->
-<!--            color: #fff;-->
-<!--            padding: 4px 16px;-->
-<!--            border-radius: 40px;-->
-<!--            font-size: 0.85rem;-->
-<!--            font-weight: 500;-->
-<!--        }-->
-
-<!--        .module-body {-->
-<!--            margin-top: 16px;-->
-<!--            display: grid;-->
-<!--            grid-template-columns: 1fr 1fr;-->
-<!--            gap: 16px;-->
-<!--        }-->
-
-<!--        .module-body ul {-->
-<!--            list-style: none;-->
-<!--            padding: 0;-->
-<!--        }-->
-
-<!--        .module-body ul li {-->
-<!--            padding: 4px 0 4px 20px;-->
-<!--            position: relative;-->
-<!--            font-size: 0.95rem;-->
-<!--            color: #334155;-->
-<!--        }-->
-
-<!--        .module-body ul li::before {-->
-<!--            content: "▹";-->
-<!--            position: absolute;-->
-<!--            left: 0;-->
-<!--            color: #2563eb;-->
-<!--        }-->
-
-<!--        /* ===== ТАРИФЫ ===== */-->
-<!--        .pricing-grid {-->
-<!--            display: grid;-->
-<!--            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));-->
-<!--            gap: 32px;-->
-<!--            margin-top: 16px;-->
-<!--        }-->
-
-<!--        .pricing-card {-->
-<!--            background: #f8fafc;-->
-<!--            border-radius: 20px;-->
-<!--            padding: 32px 28px;-->
-<!--            border: 1px solid #e2e8f0;-->
-<!--            transition: 0.2s;-->
-<!--            display: flex;-->
-<!--            flex-direction: column;-->
-<!--        }-->
-
-<!--        .pricing-card:hover {-->
-<!--            border-color: #2563eb;-->
-<!--            box-shadow: 0 8px 30px rgba(0,0,0,0.05);-->
-<!--        }-->
-
-<!--        .pricing-card.popular {-->
-<!--            border-color: #2563eb;-->
-<!--            background: #ffffff;-->
-<!--            box-shadow: 0 8px 30px rgba(37, 99, 235, 0.08);-->
-<!--        }-->
-
-<!--        .pricing-card .price {-->
-<!--            font-size: 2.8rem;-->
-<!--            font-weight: 700;-->
-<!--            margin: 12px 0 4px;-->
-<!--        }-->
-
-<!--        .pricing-card .price small {-->
-<!--            font-size: 1rem;-->
-<!--            font-weight: 400;-->
-<!--            color: #64748b;-->
-<!--        }-->
-
-<!--        .pricing-card .price-desc {-->
-<!--            color: #64748b;-->
-<!--            margin-bottom: 20px;-->
-<!--        }-->
-
-<!--        .pricing-card ul {-->
-<!--            list-style: none;-->
-<!--            padding: 0;-->
-<!--            margin: 16px 0 24px;-->
-<!--            flex: 1;-->
-<!--        }-->
-
-<!--        .pricing-card ul li {-->
-<!--            padding: 6px 0 6px 28px;-->
-<!--            position: relative;-->
-<!--            font-size: 0.95rem;-->
-<!--        }-->
-
-<!--        .pricing-card ul li::before {-->
-<!--            content: "✓";-->
-<!--            position: absolute;-->
-<!--            left: 0;-->
-<!--            color: #2563eb;-->
-<!--            font-weight: 700;-->
-<!--        }-->
-
-<!--        .pricing-card .btn {-->
-<!--            margin-top: auto;-->
-<!--        }-->
-
-<!--        /* ===== ФОРМА ===== */-->
-<!--        .form-box {-->
-<!--            max-width: 580px;-->
-<!--            margin: 0 auto;-->
-<!--            background: #f8fafc;-->
-<!--            padding: 40px;-->
-<!--            border-radius: 24px;-->
-<!--            text-align: center;-->
-<!--        }-->
-
-<!--        .form-box input,-->
-<!--        .form-box textarea {-->
-<!--            width: 100%;-->
-<!--            padding: 14px 18px;-->
-<!--            border: 1px solid #e2e8f0;-->
-<!--            border-radius: 12px;-->
-<!--            font-size: 1rem;-->
-<!--            margin-bottom: 16px;-->
-<!--            transition: 0.2s;-->
-<!--            background: #ffffff;-->
-<!--        }-->
-
-<!--        .form-box input:focus,-->
-<!--        .form-box textarea:focus {-->
-<!--            outline: none;-->
-<!--            border-color: #2563eb;-->
-<!--            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);-->
-<!--        }-->
-
-<!--        .form-box textarea {-->
-<!--            min-height: 100px;-->
-<!--            resize: vertical;-->
-<!--        }-->
-
-<!--        /* ===== ПОДВАЛ ===== */-->
-<!--        .footer {-->
-<!--            background: #0f172a;-->
-<!--            color: #94a3b8;-->
-<!--            padding: 40px 0;-->
-<!--            text-align: center;-->
-<!--            font-size: 0.9rem;-->
-<!--        }-->
-
-<!--        .footer a {-->
-<!--            color: #94a3b8;-->
-<!--            text-decoration: none;-->
-<!--        }-->
-
-<!--        .footer a:hover {-->
-<!--            color: #ffffff;-->
-<!--        }-->
-
-<!--        /* ===== АДАПТИВ ===== */-->
-<!--        @media (max-width: 768px) {-->
-<!--            .hero-grid {-->
-<!--                grid-template-columns: 1fr;-->
-<!--                gap: 40px;-->
-<!--            }-->
-
-<!--            .hero-content h1 {-->
-<!--                font-size: 2.4rem;-->
-<!--            }-->
-
-<!--            .section-title {-->
-<!--                font-size: 2rem;-->
-<!--            }-->
-
-<!--            .module-body {-->
-<!--                grid-template-columns: 1fr;-->
-<!--            }-->
-
-<!--            .pricing-grid {-->
-<!--                grid-template-columns: 1fr;-->
-<!--            }-->
-
-<!--            .form-box {-->
-<!--                padding: 24px;-->
-<!--            }-->
-<!--        }-->
-
-<!--        @media (max-width: 480px) {-->
-<!--            .hero {-->
-<!--                padding: 40px 0 60px;-->
-<!--            }-->
-
-<!--            .hero-content h1 {-->
-<!--                font-size: 2rem;-->
-<!--            }-->
-
-<!--            .section {-->
-<!--                padding: 48px 0;-->
-<!--            }-->
-
-<!--            .btn {-->
-<!--                padding: 12px 28px;-->
-<!--                font-size: 0.95rem;-->
-<!--            }-->
-<!--        }-->
-
-<!--        /* ===== ВСПОМОГАТЕЛЬНЫЕ КЛАССЫ ===== */-->
-<!--        .text-center {-->
-<!--            text-align: center;-->
-<!--        }-->
-
-<!--        .mt-16 {-->
-<!--            margin-top: 16px;-->
-<!--        }-->
-
-<!--        .mt-32 {-->
-<!--            margin-top: 32px;-->
-<!--        }-->
-
-<!--        .mb-16 {-->
-<!--            margin-bottom: 16px;-->
-<!--        }-->
-
-<!--        .gap-8 {-->
-<!--            gap: 8px;-->
-<!--        }-->
-
-<!--        .flex-center {-->
-<!--            display: flex;-->
-<!--            justify-content: center;-->
-<!--            flex-wrap: wrap;-->
-<!--        }-->
-<!--    </style>-->
-<!--</head>-->
-<!--<body>-->
-
-<!--    &lt;!&ndash; ============================================ &ndash;&gt;-->
-<!--    &lt;!&ndash; БЛОК 1: HERO (ШАПКА)                         &ndash;&gt;-->
-<!--    &lt;!&ndash; ============================================ &ndash;&gt;-->
-<!--    <section class="hero">-->
-<!--        <div class="container">-->
-<!--            <div class="hero-grid">-->
-<!--                <div class="hero-content">-->
-<!--                    &lt;!&ndash; ЗАГОЛОВОК: замените текст &ndash;&gt;-->
-<!--                    <h1>-->
-<!--                        Старт в <span>Machine Learning</span><br />-->
-<!--                        за 4 месяца-->
-<!--                    </h1>-->
-<!--                    &lt;!&ndash; ОПИСАНИЕ: замените текст &ndash;&gt;-->
-<!--                    <p class="hero-desc">-->
-<!--                        Освойте профессию Data Scientist с нуля. Соберите портфолио,-->
-<!--                        научитесь применять ML в бизнесе и пройдете собеседования.-->
-<!--                    </p>-->
-<!--                    <div class="hero-buttons">-->
-<!--                        &lt;!&ndash; ССЫЛКА НА ТЕЛЕГРАМ МЕНЕДЖЕРА: замените # на ссылку &ndash;&gt;-->
-<!--                        <a href="#" class="btn btn-primary">Связаться с менеджером</a>-->
-<!--                        &lt;!&ndash; ССЫЛКА НА ТАРИФЫ: замените # на якорь или ссылку &ndash;&gt;-->
-<!--                        <a href="#pricing" class="btn btn-outline">Смотреть тарифы</a>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="hero-image">-->
-<!--                    &lt;!&ndash; ЗДЕСЬ МОЖЕТ БЫТЬ ВАША КАРТИНКА &ndash;&gt;-->
-<!--                    &lt;!&ndash; Замените background-image или вставьте <img> &ndash;&gt;-->
-<!--                    <span style="background: #cbd5e1; padding: 8px 20px; border-radius: 40px; font-weight: 500; color: #475569;">-->
-<!--                        Ваше фото / иллюстрация-->
-<!--                    </span>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
-
-<!--    &lt;!&ndash; ============================================ &ndash;&gt;-->
-<!--    &lt;!&ndash; БЛОК 2: ДЛЯ КОГО ЭТОТ КУРС                  &ndash;&gt;-->
-<!--    &lt;!&ndash; ============================================ &ndash;&gt;-->
-<!--    <section class="section">-->
-<!--        <div class="container">-->
-<!--            <h2 class="section-title">Для кого этот курс</h2>-->
-<!--            <p class="section-subtitle">-->
-<!--                &lt;!&ndash; ЗАМЕНИТЕ ТЕКСТ &ndash;&gt;-->
-<!--                Курс подойдет тем, кто хочет войти в Data Science и применять ML в работе.-->
-<!--            </p>-->
-<!--            <div class="audience-grid">-->
-<!--                &lt;!&ndash; КАРТОЧКА 1 &ndash;&gt;-->
-<!--                <div class="audience-card">-->
-<!--                    <h3>🧑‍💻 Новички без опыта в ML</h3>-->
-<!--                    <p>Освоите основы машинного обучения, научитесь использовать ИИ-помощников для кода и поймете устройство ML-проектов.</p>-->
-<!--                </div>-->
-<!--                &lt;!&ndash; КАРТОЧКА 2 &ndash;&gt;-->
-<!--                <div class="audience-card">-->
-<!--                    <h3>📊 Аналитики данных</h3>-->
-<!--                    <p>Перейдете от отчетности к прогнозированию и применению ML-моделей в рабочих задачах.</p>-->
-<!--                </div>-->
-<!--                &lt;!&ndash; КАРТОЧКА 3 &ndash;&gt;-->
-<!--                <div class="audience-card">-->
-<!--                    <h3>👨‍💻 Разработчики</h3>-->
-<!--                    <p>Добавите в стек MLOps и основы проектирования ML-систем. Научитесь ускорять разработку нейросетями.</p>-->
-<!--                </div>-->
-<!--                &lt;!&ndash; КАРТОЧКА 4 &ndash;&gt;-->
-<!--                <div class="audience-card">-->
-<!--                    <h3>👔 Менеджеры и тимлиды</h3>-->
-<!--                    <p>Начнете говорить с инженерами на одном языке, оценивать сроки и участвовать в обсуждении архитектуры.</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
-
-<!--    &lt;!&ndash; ============================================ &ndash;&gt;-->
-<!--    &lt;!&ndash; БЛОК 3: ТРЕБОВАНИЯ К СТУДЕНТАМ              &ndash;&gt;-->
-<!--    &lt;!&ndash; ============================================ &ndash;&gt;-->
-<!--    <section class="section" style="background: #f8fafc;">-->
-<!--        <div class="container">-->
-<!--            <h2 class="section-title">Подойдет ли вам этот курс?</h2>-->
-<!--            <p class="section-subtitle">-->
-<!--                &lt;!&ndash; ЗАМЕНИТЕ ТЕКСТ &ndash;&gt;-->
-<!--                Для комфортного обучения желательно иметь базовую подготовку:-->
-<!--            </p>-->
-<!--            <div class="requirements-grid">-->
-<!--                <div class="req-item">-->
-<!--                    <h4>🐍 Python</h4>-->
-<!--                    <ul>-->
-<!--                        <li>базовый синтаксис</li>-->
-<!--                        <li>циклы и функции</li>-->
-<!--                        <li>простые типы данных</li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--                <div class="req-item">-->
-<!--                    <h4>📐 Математика</h4>-->
-<!--                    <ul>-->
-<!--                        <li>уравнения и графики</li>-->
-<!--                        <li>производная и градиент</li>-->
-<!--                        <li>матрицы и операции</li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--                <div class="req-item">-->
-<!--                    <h4>📊 Статистика</h4>-->
-<!--                    <ul>-->
-<!--                        <li>среднее и медиана</li>-->
-<!--                        <li>дисперсия</li>-->
-<!--                        <li>нормальное распределение</li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--                <div class="req-item">-->
-<!--                    <h4>🛠 Инструменты</h4>-->
-<!--                    <ul>-->
-<!--                        <li>установка Jupyter</li>-->
-<!--                        <li>импорт библиотек</li>-->
-<!--                        <li>запуск Python-кода</li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
-
-<!--    &lt;!&ndash; ============================================ &ndash;&gt;-->
-<!--    &lt;!&ndash; БЛОК 4: ФОРМАТ ОБУЧЕНИЯ                     &ndash;&gt;-->
-<!--    &lt;!&ndash; ============================================ &ndash;&gt;-->
-<!--    <section class="section">-->
-<!--        <div class="container">-->
-<!--            <h2 class="section-title">Формат курса</h2>-->
-<!--            <p class="section-subtitle">-->
-<!--                &lt;!&ndash; ЗАМЕНИТЕ ТЕКСТ &ndash;&gt;-->
-<!--                Все материалы остаются в личном кабинете навсегда.-->
-<!--            </p>-->
-<!--            <div class="format-grid">-->
-<!--                <div class="format-card">-->
-<!--                    <h3>⏳ Длительность</h3>-->
-<!--                    <ul>-->
-<!--                        <li><strong>Тариф 1:</strong> 4 месяца</li>-->
-<!--                        <li><strong>Тариф 2:</strong> 6 месяцев (с проектом)</li>-->
-<!--                        <li>1 месяц — подготовка (математика + Python)</li>-->
-<!--                        <li>3 месяца — базовый ML + бизнес-кейсы</li>-->
-<!--                        <li>2 месяца — подготовка к собеседованиям</li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--                <div class="format-card">-->
-<!--                    <h3>📹 Формат занятий</h3>-->
-<!--                    <ul>-->
-<!--                        <li>Видеолекции (1,5–2,5 ч/нед)</li>-->
-<!--                        <li>Вебинары с ответами на вопросы</li>-->
-<!--                        <li>Домашние задания в Jupyter Notebook</li>-->
-<!--                        <li>Итоговый проект для портфолио</li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--                <div class="format-card">-->
-<!--                    <h3>💬 Коммуникация</h3>-->
-<!--                    <ul>-->
-<!--                        <li>Платформа: <strong>GetCourse</strong></li>-->
-<!--                        <li>Закрытый Telegram-чат группы</li>-->
-<!--                        <li>Telegram-канал с оповещениями</li>-->
-<!--                        <li>Чат выпускников после сдачи домашек</li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
-
-<!--    &lt;!&ndash; ============================================ &ndash;&gt;-->
-<!--    &lt;!&ndash; БЛОК 5: ПРОГРАММА КУРСА                     &ndash;&gt;-->
-<!--    &lt;!&ndash; ============================================ &ndash;&gt;-->
-<!--    <section class="section" style="background: #f8fafc;">-->
-<!--        <div class="container">-->
-<!--            <h2 class="section-title">Программа курса</h2>-->
-<!--            <p class="section-subtitle">-->
-<!--                &lt;!&ndash; ЗАМЕНИТЕ ТЕКСТ &ndash;&gt;-->
-<!--                Обновленная программа с упором на практику и современные инструменты.-->
-<!--            </p>-->
-
-<!--            &lt;!&ndash; МОДУЛЬ 1 &ndash;&gt;-->
-<!--            <div class="module">-->
-<!--                <div class="module-header">-->
-<!--                    <h3>Модуль 1 — Подготовительный: Python и математика</h3>-->
-<!--                    <span>База</span>-->
-<!--                </div>-->
-<!--                <div class="module-body">-->
-<!--                    <ul>-->
-<!--                        <li>Теория вероятностей</li>-->
-<!--                        <li>Алгоритмы и структуры данных</li>-->
-<!--                        <li>Основы программирования на Python</li>-->
-<!--                    </ul>-->
-<!--                    <ul>-->
-<!--                        <li>Математический анализ</li>-->
-<!--                        <li>Линейная алгебра и многомерный анализ</li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--            </div>-->
-
-<!--            &lt;!&ndash; МОДУЛЬ 2 &ndash;&gt;-->
-<!--            <div class="module">-->
-<!--                <div class="module-header">-->
-<!--                    <h3>Модуль 2 — Алгоритмы машинного обучения</h3>-->
-<!--                    <span>Основной</span>-->
-<!--                </div>-->
-<!--                <div class="module-body">-->
-<!--                    <ul>-->
-<!--                        <li>Простые методы (kNN, Наивный Байес)</li>-->
-<!--                        <li>Обучение без учителя (K-Means, кластеризация)</li>-->
-<!--                        <li>Введение в нейронные сети</li>-->
-<!--                    </ul>-->
-<!--                    <ul>-->
-<!--                        <li>Линейные модели (регрессия, SVM)</li>-->
-<!--                        <li>Деревья и ансамбли (Random Forest, Gradient Boosting)</li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--            </div>-->
-
-<!--            &lt;!&ndash; МОДУЛЬ 3 &ndash;&gt;-->
-<!--            <div class="module">-->
-<!--                <div class="module-header">-->
-<!--                    <h3>Модуль 3 — Оценка качества</h3>-->
-<!--                    <span>Критично</span>-->
-<!--                </div>-->
-<!--                <div class="module-body">-->
-<!--                    <ul>-->
-<!--                        <li>Метрики классификации и регрессии</li>-->
-<!--                        <li>Валидация моделей</li>-->
-<!--                    </ul>-->
-<!--                    <ul>-->
-<!--                        <li>A/B-тестирование (теория + практика)</li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--            </div>-->
-
-<!--            &lt;!&ndash; МОДУЛЬ 4 &ndash;&gt;-->
-<!--            <div class="module">-->
-<!--                <div class="module-header">-->
-<!--                    <h3>Модуль 4 — Внедрение ML в бизнес</h3>-->
-<!--                    <span>Практика</span>-->
-<!--                </div>-->
-<!--                <div class="module-body">-->
-<!--                    <ul>-->
-<!--                        <li>AI-ассистенты для анализа данных</li>-->
-<!--                        <li>Основы MLOps</li>-->
-<!--                    </ul>-->
-<!--                    <ul>-->
-<!--                        <li>ML System Design</li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--            </div>-->
-
-<!--            &lt;!&ndash; МОДУЛЬ 5 &ndash;&gt;-->
-<!--            <div class="module">-->
-<!--                <div class="module-header">-->
-<!--                    <h3>Модуль 5 — Применение ML в бизнесе</h3>-->
-<!--                    <span>Кейсы</span>-->
-<!--                </div>-->
-<!--                <div class="module-body">-->
-<!--                    <ul>-->
-<!--                        <li>Рекомендательные системы</li>-->
-<!--                        <li>Динамическое ценообразование</li>-->
-<!--                        <li>ML-лидогенерация</li>-->
-<!--                    </ul>-->
-<!--                    <ul>-->
-<!--                        <li>Скоринги и антифрод</li>-->
-<!--                        <li>Приоритизация инвестиций</li>-->
-<!--                        <li>Автоматизация с Deep Learning</li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--            </div>-->
-
-<!--            &lt;!&ndash; ДОПОЛНИТЕЛЬНЫЙ МОДУЛЬ &ndash;&gt;-->
-<!--            <div class="module" style="border-left: 4px solid #7c3aed;">-->
-<!--                <div class="module-header">-->
-<!--                    <h3>Дополнительно — Подготовка к поиску работы</h3>-->
-<!--                    <span>Карьера</span>-->
-<!--                </div>-->
-<!--                <div class="module-body">-->
-<!--                    <ul>-->
-<!--                        <li>Разбор типовых вопросов на собеседованиях</li>-->
-<!--                        <li>Подготовка резюме</li>-->
-<!--                    </ul>-->
-<!--                    <ul>-->
-<!--                        <li>Стратегия прохождения интервью</li>-->
-<!--                        <li>Рекомендации от экспертов</li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--            </div>-->
-
-<!--        </div>-->
-<!--    </section>-->
-
-<!--    &lt;!&ndash; ============================================ &ndash;&gt;-->
-<!--    &lt;!&ndash; БЛОК 6: ТАРИФЫ                              &ndash;&gt;-->
-<!--    &lt;!&ndash; ============================================ &ndash;&gt;-->
-<!--    <section class="section" id="pricing">-->
-<!--        <div class="container">-->
-<!--            <h2 class="section-title">Выберите тариф</h2>-->
-<!--            <p class="section-subtitle">-->
-<!--                &lt;!&ndash; ЗАМЕНИТЕ ТЕКСТ &ndash;&gt;-->
-<!--                Оплата по частям — рассрочка на 18 месяцев.-->
-<!--            </p>-->
-<!--            <div class="pricing-grid">-->
-
-<!--                &lt;!&ndash; ТАРИФ 1 &ndash;&gt;-->
-<!--                <div class="pricing-card">-->
-<!--                    <h3>Тариф 1</h3>-->
-<!--                    <div class="price">8 333 ₽ <small>/мес</small></div>-->
-<!--                    <div class="price-desc">Полная стоимость: 150 000 ₽</div>-->
-<!--                    <ul>-->
-<!--                        <li>Подготовительный модуль</li>-->
-<!--                        <li>База ML</li>-->
-<!--                        <li>Применение ML в бизнес-кейсах</li>-->
-<!--                        <li>Практические задачи</li>-->
-<!--                    </ul>-->
-<!--                    &lt;!&ndash; ССЫЛКА НА ОПЛАТУ / МЕНЕДЖЕРА: замените # &ndash;&gt;-->
-<!--                    <a href="#" class="btn btn-primary btn-block">Выбрать тариф</a>-->
-<!--                </div>-->
-
-<!--                &lt;!&ndash; ТАРИФ 2 (ПОПУЛЯРНЫЙ) &ndash;&gt;-->
-<!--                <div class="pricing-card popular">-->
-<!--                    <div style="background: #2563eb; color: white; padding: 4px 16px; border-radius: 40px; display: inline-block; font-size: 0.8rem; font-weight: 600; margin-bottom: 12px;">-->
-<!--                        🚀 Самый популярный-->
-<!--                    </div>-->
-<!--                    <h3>Тариф 2</h3>-->
-<!--                    <div class="price">10 278 ₽ <small>/мес</small></div>-->
-<!--                    <div class="price-desc">Полная стоимость: 185 000 ₽</div>-->
-<!--                    <ul>-->
-<!--                        <li>Всё, что в Тарифе 1</li>-->
-<!--                        <li>Подготовка к собеседованиям</li>-->
-<!--                        <li>Карьерный вебинар с ML-инженером</li>-->
-<!--                        <li>Разбор резюме</li>-->
-<!--                        <li>Итоговый проект</li>-->
-<!--                        <li>Поддержка кураторов</li>-->
-<!--                        <li>Бессрочный доступ к обновлениям</li>-->
-<!--                    </ul>-->
-<!--                    &lt;!&ndash; ССЫЛКА НА ОПЛАТУ / МЕНЕДЖЕРА: замените # &ndash;&gt;-->
-<!--                    <a href="#" class="btn btn-primary btn-block">Выбрать тариф</a>-->
-<!--                </div>-->
-
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
-
-<!--    &lt;!&ndash; ============================================ &ndash;&gt;-->
-<!--    &lt;!&ndash; БЛОК 7: ФОРМА СВЯЗИ С МЕНЕДЖЕРОМ           &ndash;&gt;-->
-<!--    &lt;!&ndash; ============================================ &ndash;&gt;-->
-<!--    <section class="section" style="background: #f8fafc;">-->
-<!--        <div class="container">-->
-<!--            <h2 class="section-title">Остались вопросы?</h2>-->
-<!--            <p class="section-subtitle">-->
-<!--                &lt;!&ndash; ЗАМЕНИТЕ ТЕКСТ &ndash;&gt;-->
-<!--                Заполните форму, и менеджер свяжется с вами, чтобы ответить на все вопросы.-->
-<!--            </p>-->
-<!--            <div class="form-box">-->
-<!--                <form action="#" method="POST">-->
-<!--                    &lt;!&ndash; ЗАМЕНИТЕ action на ваш обработчик формы &ndash;&gt;-->
-<!--                    <input type="text" name="name" placeholder="Ваше имя" required />-->
-<!--                    <input type="email" name="email" placeholder="Email" required />-->
-<!--                    <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" />-->
-<!--                    <textarea name="message" placeholder="Ваш вопрос"></textarea>-->
-<!--                    <button type="submit" class="btn btn-primary btn-block">Отправить</button>-->
-<!--                </form>-->
-<!--                <p style="margin-top: 16px; font-size: 0.9rem; color: #64748b;">-->
-<!--                    &lt;!&ndash; ЗАМЕНИТЕ ТЕКСТ &ndash;&gt;-->
-<!--                    Или напишите менеджеру в Telegram: <a href="#" style="color: #2563eb; font-weight: 500;">@terehinvi</a>-->
-<!--                </p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
-
-<!--    &lt;!&ndash; ============================================ &ndash;&gt;-->
-<!--    &lt;!&ndash; ПОДВАЛ                                      &ndash;&gt;-->
-<!--    &lt;!&ndash; ============================================ &ndash;&gt;-->
-<!--    <footer class="footer">-->
-<!--        <div class="container">-->
-<!--            <p>-->
-<!--                &lt;!&ndash; ЗАМЕНИТЕ НАЗВАНИЕ И ИНН &ndash;&gt;-->
-<!--                ООО “Ваша компания” · ИНН 1234567890<br />-->
-<!--                &lt;!&ndash; ЗАМЕНИТЕ ДАТУ СТАРТА &ndash;&gt;-->
-<!--                Дата старта потока: 29 июля 2026-->
-<!--            </p>-->
-<!--            <p style="margin-top: 8px;">-->
-<!--                <a href="#">Политика конфиденциальности</a> ·-->
-<!--                <a href="#">Договор оферты</a>-->
-<!--            </p>-->
-<!--        </div>-->
-<!--    </footer>-->
-
-<!--    &lt;!&ndash; ============================================ &ndash;&gt;-->
-<!--    &lt;!&ndash; НЕБОЛЬШОЙ JS ДЛЯ АККОРДЕОНОВ ПРОГРАММЫ     &ndash;&gt;-->
-<!--    &lt;!&ndash; ============================================ &ndash;&gt;-->
-<!--    <script>-->
-<!--        document.addEventListener('DOMContentLoaded', function() {-->
-<!--            // Делаем модули кликабельными для мобильных-->
-<!--            const modules = document.querySelectorAll('.module');-->
-<!--            modules.forEach(module => {-->
-<!--                const header = module.querySelector('.module-header');-->
-<!--                const body = module.querySelector('.module-body');-->
-<!--                if (header && body) {-->
-<!--                    header.style.cursor = 'pointer';-->
-<!--                    header.addEventListener('click', function() {-->
-<!--                        if (window.innerWidth <= 768) {-->
-<!--                            if (body.style.display === 'none' || body.style.display === '') {-->
-<!--                                body.style.display = 'grid';-->
-<!--                            } else {-->
-<!--                                body.style.display = 'none';-->
-<!--                            }-->
-<!--                        }-->
-<!--                    });-->
-<!--                    // По умолчанию на мобильных скрываем, на десктопе показываем-->
-<!--                    if (window.innerWidth <= 768) {-->
-<!--                        body.style.display = 'none';-->
-<!--                    } else {-->
-<!--                        body.style.display = 'grid';-->
-<!--                    }-->
-<!--                }-->
-<!--            });-->
-
-<!--            // При ресайзе окна корректируем отображение-->
-<!--            window.addEventListener('resize', function() {-->
-<!--                const bodies = document.querySelectorAll('.module-body');-->
-<!--                bodies.forEach(body => {-->
-<!--                    if (window.innerWidth <= 768) {-->
-<!--                        body.style.display = 'none';-->
-<!--                    } else {-->
-<!--                        body.style.display = 'grid';-->
-<!--                    }-->
-<!--                });-->
-<!--            });-->
-<!--        });-->
-<!--    </script>-->
-
-<!--</body>-->
-<!--</html>-->
-
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -1031,7 +14,7 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-            background: #0a0e1a; /* Темно-синий фон */
+            background: #0a0e1a;
             color: #e2e8f0;
             line-height: 1.6;
             overflow-x: hidden;
@@ -1087,7 +70,7 @@
         }
 
         .btn-primary {
-            background: #a3e635; /* Кислотно-зеленый */
+            background: #a3e635;
             color: #0a0e1a;
             box-shadow: 0 0 20px rgba(163, 230, 53, 0.3);
         }
@@ -1117,9 +100,7 @@
             text-align: center;
         }
 
-        /* ======================================== */
         /* ===== HERO С АНИМАЦИЕЙ ФОРМУЛ ===== */
-        /* ======================================== */
         .hero {
             position: relative;
             padding: 100px 0 120px;
@@ -1130,7 +111,6 @@
             align-items: center;
         }
 
-        /* Контейнер для анимированных формул */
         .formula-bg {
             position: absolute;
             top: 0;
@@ -1153,7 +133,6 @@
             letter-spacing: 1px;
         }
 
-        /* Разные позиции и скорости */
         .formula:nth-child(1) { top: 5%; left: -10%; animation-duration: 25s; font-size: 2.2rem; }
         .formula:nth-child(2) { top: 15%; right: -5%; animation-duration: 30s; animation-delay: -3s; font-size: 2.8rem; }
         .formula:nth-child(3) { top: 30%; left: -15%; animation-duration: 22s; animation-delay: -7s; font-size: 2rem; }
@@ -1171,7 +150,6 @@
             100% { transform: translateX(-100px) translateY(30px) rotate(-5deg); opacity: 0.3; }
         }
 
-        /* Дополнительный слой с более яркими формулами (медленнее) */
         .formula-bright {
             position: absolute;
             font-size: 3.5rem;
@@ -1192,7 +170,6 @@
             100% { transform: translateX(-200px) translateY(80px) rotate(-10deg); opacity: 0.05; }
         }
 
-        /* Контент поверх фона */
         .hero-content {
             position: relative;
             z-index: 2;
@@ -1200,18 +177,18 @@
             width: 100%;
         }
 
-    .hero-content h1 {
-        font-size: clamp(2.8rem, 8vw, 5rem);
-        font-weight: 800;
-        line-height: 1.1;
-        letter-spacing: 0.08em;
-        margin-bottom: 24px;
-        color: #a3e635;
-        text-shadow: 0 0 60px rgba(163, 230, 53, 0.15);
-        width: 100%;
-        max-width: 100%;
-        word-break: break-word;
-    }
+        .hero-content h1 {
+            font-size: clamp(2.8rem, 8vw, 5rem);
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: 0.08em;
+            margin-bottom: 24px;
+            color: #a3e635;
+            text-shadow: 0 0 60px rgba(163, 230, 53, 0.15);
+            width: 100%;
+            max-width: 100%;
+            word-break: break-word;
+        }
 
         .hero-content .subtitle {
             font-size: 1.4rem;
@@ -1528,6 +505,27 @@
             display: inline-block;
         }
 
+        .form-message {
+            margin-top: 16px;
+            padding: 12px;
+            border-radius: 8px;
+            display: none;
+        }
+
+        .form-message.success {
+            display: block;
+            background: rgba(163, 230, 53, 0.15);
+            color: #a3e635;
+            border: 1px solid rgba(163, 230, 53, 0.3);
+        }
+
+        .form-message.error {
+            display: block;
+            background: rgba(255, 64, 129, 0.15);
+            color: #ff4081;
+            border: 1px solid rgba(255, 64, 129, 0.3);
+        }
+
         /* ===== АДАПТИВ ===== */
         @media (max-width: 768px) {
             .hero {
@@ -1565,7 +563,7 @@
 
         @media (max-width: 480px) {
             .hero-content h1 {
-                font-size: 5.2rem;
+                font-size: 2.2rem;
             }
 
             .section {
@@ -1585,9 +583,7 @@
     <!-- БЛОК 1: HERO С АНИМАЦИЕЙ ФОРМУЛ             -->
     <!-- ============================================ -->
     <section class="hero">
-        <!-- Фоновые анимированные формулы -->
         <div class="formula-bg">
-            <!-- Школьные формулы -->
             <div class="formula">E = mc²</div>
             <div class="formula">∫ eˣ dx = eˣ + C</div>
             <div class="formula">∇·E = ρ/ε₀</div>
@@ -1596,8 +592,6 @@
             <div class="formula">f'(x) = lim Δx→0 (f(x+Δx)-f(x))/Δx</div>
             <div class="formula">P(A|B) = P(A∩B)/P(B)</div>
             <div class="formula">det(A) = λ₁ · λ₂ · … · λₙ</div>
-
-            <!-- Более яркие, медленные формулы -->
             <div class="formula-bright">∂f/∂x = 2x + 3y</div>
             <div class="formula-bright">∑ᵢ₌₁ⁿ xᵢ = n·μ</div>
             <div class="formula-bright">A·x = λ·x</div>
@@ -1605,16 +599,17 @@
 
         <div class="container">
             <div class="hero-content">
-                <!-- НАЗВАНИЕ КУРСА НА ВСЮ ШИРИНУ -->
                 <h1>Машинное обучение<br />с нуля до профи.</h1>
                 <p class="subtitle">
-                    <!-- ЗАМЕНИТЕ ТЕКСТ -->
                     Освойте Data Science за короткий срок. Учебные проекты и кейсы, подготовка к собеседованиям и трудоустройству.
                 </p>
                 <div class="hero-buttons">
-                    <!-- ССЫЛКА НА ТЕЛЕГРАМ МЕНЕДЖЕРА: замените # -->
-                    <a href="#" class="btn btn-primary">Связаться с менеджером</a>
-                    <!-- ССЫЛКА НА ТАРИФЫ: замените # на якорь -->
+                    <!-- ===== КНОПКА "СВЯЗАТЬСЯ С МЕНЕДЖЕРОМ" ===== -->
+                    <!-- ВЫБЕРИТЕ ОДИН ИЗ ВАРИАНТОВ: -->
+                    <!-- Вариант 1: Telegram -->
+                    <a href="https://t.me/terehinvi" target="_blank" class="btn btn-primary">Связаться с менеджером</a>
+                    <!-- Вариант 2: ВКонтакте (замените ссылку) -->
+                    <!-- <a href="https://vk.com/ваш_менеджер" target="_blank" class="btn btn-primary">Связаться с менеджером</a> -->
                     <a href="#pricing" class="btn btn-outline">Выбрать тариф</a>
                 </div>
             </div>
@@ -1628,7 +623,6 @@
         <div class="container">
             <h2 class="section-title">Для кого этот курс</h2>
             <p class="section-subtitle">
-                <!-- ЗАМЕНИТЕ ТЕКСТ -->
                 Курс подойдет тем, кто хочет войти в Data Science и применять ML в работе.
             </p>
             <div class="audience-grid">
@@ -1659,7 +653,6 @@
         <div class="container">
             <h2 class="section-title">Подойдет ли вам этот курс?</h2>
             <p class="section-subtitle">
-                <!-- ЗАМЕНИТЕ ТЕКСТ -->
                 Для комфортного обучения желательно иметь базовую подготовку:
             </p>
             <div class="requirements-grid">
@@ -1706,7 +699,6 @@
         <div class="container">
             <h2 class="section-title">Формат курса</h2>
             <p class="section-subtitle">
-                <!-- ЗАМЕНИТЕ ТЕКСТ -->
                 Все материалы остаются в личном кабинете навсегда.
             </p>
             <div class="format-grid">
@@ -1749,11 +741,9 @@
         <div class="container">
             <h2 class="section-title">Программа курса</h2>
             <p class="section-subtitle">
-                <!-- ЗАМЕНИТЕ ТЕКСТ -->
                 Обновленная программа с упором на практику и современные инструменты.
             </p>
 
-            <!-- МОДУЛЬ 1 -->
             <div class="module">
                 <div class="module-header">
                     <h3>Модуль 1 — Подготовительный: Python и математика</h3>
@@ -1772,7 +762,6 @@
                 </div>
             </div>
 
-            <!-- МОДУЛЬ 2 -->
             <div class="module">
                 <div class="module-header">
                     <h3>Модуль 2 — Алгоритмы машинного обучения</h3>
@@ -1791,7 +780,6 @@
                 </div>
             </div>
 
-            <!-- МОДУЛЬ 3 -->
             <div class="module">
                 <div class="module-header">
                     <h3>Модуль 3 — Оценка качества</h3>
@@ -1808,7 +796,6 @@
                 </div>
             </div>
 
-            <!-- МОДУЛЬ 4 -->
             <div class="module">
                 <div class="module-header">
                     <h3>Модуль 4 — Внедрение ML в бизнес</h3>
@@ -1825,7 +812,6 @@
                 </div>
             </div>
 
-            <!-- МОДУЛЬ 5 -->
             <div class="module">
                 <div class="module-header">
                     <h3>Модуль 5 — Применение ML в бизнесе</h3>
@@ -1845,7 +831,6 @@
                 </div>
             </div>
 
-            <!-- ДОПОЛНИТЕЛЬНЫЙ МОДУЛЬ -->
             <div class="module" style="border-left: 4px solid #a3e635;">
                 <div class="module-header">
                     <h3>Дополнительно — Подготовка к поиску работы</h3>
@@ -1862,7 +847,6 @@
                     </ul>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -1873,12 +857,9 @@
         <div class="container">
             <h2 class="section-title">Выберите тариф</h2>
             <p class="section-subtitle">
-                <!-- ЗАМЕНИТЕ ТЕКСТ -->
                 Оплата по частям — рассрочка на 18 месяцев.
             </p>
             <div class="pricing-grid">
-
-                <!-- ТАРИФ 1 -->
                 <div class="pricing-card">
                     <h3>Тариф 1</h3>
                     <div class="price">8 333 ₽ <small>/мес</small></div>
@@ -1889,11 +870,9 @@
                         <li>Применение ML в бизнес-кейсах</li>
                         <li>Практические задачи</li>
                     </ul>
-                    <!-- ССЫЛКА НА ОПЛАТУ / МЕНЕДЖЕРА: замените # -->
                     <a href="#" class="btn btn-primary btn-block">Выбрать тариф</a>
                 </div>
 
-                <!-- ТАРИФ 2 (ПОПУЛЯРНЫЙ) -->
                 <div class="pricing-card popular">
                     <div style="background: #a3e635; color: #0a0e1a; padding: 4px 16px; border-radius: 40px; display: inline-block; font-size: 0.8rem; font-weight: 700; margin-bottom: 12px;">
                         🚀 Самый популярный
@@ -1910,10 +889,8 @@
                         <li>Поддержка кураторов</li>
                         <li>Бессрочный доступ к обновлениям</li>
                     </ul>
-                    <!-- ССЫЛКА НА ОПЛАТУ / МЕНЕДЖЕРА: замените # -->
                     <a href="#" class="btn btn-primary btn-block">Выбрать тариф</a>
                 </div>
-
             </div>
         </div>
     </section>
@@ -1925,21 +902,22 @@
         <div class="container">
             <h2 class="section-title">Остались вопросы?</h2>
             <p class="section-subtitle">
-                <!-- ЗАМЕНИТЕ ТЕКСТ -->
                 Заполните форму, и менеджер свяжется с вами, чтобы ответить на все вопросы.
             </p>
             <div class="form-box">
-                <form action="#" method="POST">
-                    <!-- ЗАМЕНИТЕ action на ваш обработчик формы -->
-                    <input type="text" name="name" placeholder="Ваше имя" required />
-                    <input type="email" name="email" placeholder="Email" required />
-                    <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
-                    <textarea name="message" placeholder="Ваш вопрос"></textarea>
+                <!-- ===== ФОРМА ===== -->
+                <form id="contactForm" action="#" method="POST">
+                    <input type="text" id="userName" name="name" placeholder="Ваше имя" required />
+                    <input type="email" id="userEmail" name="email" placeholder="Email" required />
+                    <input type="tel" id="userPhone" name="phone" placeholder="+7 (___) ___-__-__" />
+                    <textarea id="userMessage" name="message" placeholder="Ваш вопрос" required></textarea>
                     <button type="submit" class="btn btn-primary btn-block">Отправить</button>
                 </form>
+                <div id="formMessage" class="form-message"></div>
+
                 <p style="margin-top: 16px; font-size: 0.9rem; color: #94a3b8;">
-                    <!-- ЗАМЕНИТЕ ТЕКСТ И ССЫЛКУ -->
-                    Или напишите менеджеру в Telegram: <a href="#" style="color: #a3e635; font-weight: 500;">@ваш_менеджер</a>
+                    Или напишите менеджеру в Telegram:
+<!--                    <a href="https://t.me/ваш_менеджер" target="_blank" style="color: #a3e635; font-weight: 500;">@ваш_менеджер</a>-->
                 </p>
             </div>
         </div>
@@ -1950,24 +928,26 @@
     <!-- ============================================ -->
     <footer class="footer">
         <div class="container">
-            <p>
-                <!-- ЗАМЕНИТЕ НАЗВАНИЕ И ИНН -->
-                ООО “Ваша компания” · ИНН 1234567890<br />
-                <!-- ЗАМЕНИТЕ ДАТУ СТАРТА -->
-                Дата старта потока: 29 июля 2026
-            </p>
-            <p style="margin-top: 8px;">
-                <a href="#">Политика конфиденциальности</a> ·
-                <a href="#">Договор оферты</a>
-            </p>
+<!--            <p>-->
+<!--                ООО “Ваша компания” · ИНН 1234567890<br />-->
+<!--                Дата старта потока: 29 июля 2026-->
+<!--            </p>-->
+<!--            <p style="margin-top: 8px;">-->
+<!--                <a href="#">Политика конфиденциальности</a> ·-->
+<!--                <a href="#">Договор оферты</a>-->
+<!--            </p>-->
         </div>
     </footer>
 
     <!-- ============================================ -->
-    <!-- JS ДЛЯ АККОРДЕОНОВ ПРОГРАММЫ                -->
+    <!-- JS ДЛЯ ФОРМЫ И АККОРДЕОНОВ                 -->
     <!-- ============================================ -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+
+            // ==========================================
+            // 1. АККОРДЕОНЫ ДЛЯ ПРОГРАММЫ
+            // ==========================================
             const modules = document.querySelectorAll('.module');
             modules.forEach(module => {
                 const header = module.querySelector('.module-header');
@@ -2001,20 +981,97 @@
                     }
                 });
             });
+
+            // ==========================================
+            // 2. ФОРМА ОТПРАВКИ В TELEGRAM И ПОЧТУ
+            // ==========================================
+
+            // ⚙️ НАСТРОЙКИ (ЗАПОЛНИТЕ СВОИМИ ДАННЫМИ):
+            const BOT_TOKEN = '8801941059:AAHqTSy2UoFi7Ew3AEnv6h9XVwhbC8b_FZI'; // Токен вашего бота
+            const CHAT_ID = '8378833882'; // Ваш Telegram ID
+            const MANAGER_EMAIL = 'vitalii.grebnev@mail.ru'; // Email менеджера
+
+            const form = document.getElementById('contactForm');
+            const messageDiv = document.getElementById('formMessage');
+
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+
+                const name = document.getElementById('userName').value.trim();
+                const email = document.getElementById('userEmail').value.trim();
+                const phone = document.getElementById('userPhone').value.trim();
+                const message = document.getElementById('userMessage').value.trim();
+
+                // Валидация
+                if (!name || !email || !message) {
+                    showMessage('Пожалуйста, заполните все обязательные поля.', 'error');
+                    return;
+                }
+
+                // Формируем текст для Telegram
+                const text = `📩 *Новая заявка с сайта!*\n\n` +
+                    `👤 *Имя:* ${name}\n` +
+                    `📧 *Email:* ${email}\n` +
+                    `📞 *Телефон:* ${phone || 'не указан'}\n` +
+                    `💬 *Вопрос:*\n${message}`;
+
+                // Формируем письмо для почты (через mailto)
+                const mailtoLink =
+                    `mailto:${MANAGER_EMAIL}?subject=Новая заявка с сайта от ${encodeURIComponent(name)}&body=${encodeURIComponent(
+                        `Имя: ${name}\nEmail: ${email}\nТелефон: ${phone || 'не указан'}\n\nВопрос:\n${message}`
+                    )}`;
+
+                try {
+                    // Отправляем в Telegram через бота
+                    const tgResponse = await fetch(
+                        `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify({
+                                chat_id: CHAT_ID,
+                                text: text,
+                                parse_mode: 'Markdown'
+                            })
+                        }
+                    );
+
+                    const tgData = await tgResponse.json();
+
+                    if (tgData.ok) {
+                        // Открываем почтовый клиент
+                        window.open(mailtoLink, '_blank');
+
+                        showMessage('✅ Заявка отправлена! Менеджер свяжется с вами в ближайшее время.', 'success');
+                        form.reset();
+                    } else {
+                        // Если Telegram не отправился, пробуем только почту
+                        window.open(mailtoLink, '_blank');
+                        showMessage('⚠️ Заявка отправлена на почту. Менеджер свяжется с вами.', 'success');
+                        form.reset();
+                    }
+                } catch (error) {
+                    // Если ошибка — пробуем хотя бы почту
+                    window.open(mailtoLink, '_blank');
+                    showMessage('⚠️ Заявка отправлена на почту. Менеджер свяжется с вами.', 'success');
+                    form.reset();
+                }
+            });
+
+            function showMessage(text, type) {
+                messageDiv.textContent = text;
+                messageDiv.className = 'form-message ' + type;
+                messageDiv.style.display = 'block';
+
+                // Скрываем сообщение через 10 секунд
+                setTimeout(() => {
+                    messageDiv.style.display = 'none';
+                    messageDiv.className = 'form-message';
+                }, 10000);
+            }
         });
     </script>
 
 </body>
 </html>
-
-
-<!--сайт:-->
-
-<!--сделать рабочими кнопки, добавить ссылку переход на контакт с менеджером-->
-<!--контект, цены-->
-<!--добавить блок с информацией об учителях (мне и отзывы)-->
-
-<!--Доп задачи:-->
-<!--найти юриста консультация по оформлению (для самозанятости и продажи курса)-->
-
-

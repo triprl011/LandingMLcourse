@@ -896,30 +896,6 @@
         line-height: 1.4;
         margin-top: 2px;
     }
-
-    /* ===== КНОПКА ПЕРЕКЛЮЧЕНИЯ ЯЗЫКА ===== */
-    .lang-btn {
-        background: rgba(255,255,255,0.08);
-        border: 1px solid rgba(255,255,255,0.1);
-        color: #e2e8f0;
-        padding: 6px 16px;
-        border-radius: 40px;
-        font-size: 0.75rem;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        font-family: inherit;
-    }
-
-    .lang-btn:hover {
-        background: #a3e635;
-        color: #0a0e1a;
-        border-color: #a3e635;
-        transform: translateY(-2px);
-        box-shadow: 0 0 20px rgba(163, 230, 53, 0.2);
-    }
     </style>
 </head>
 <body>
@@ -929,17 +905,15 @@
     <!-- ============================================ -->
     <header class="sticky-header">
         <div class="container">
-            <a href="#" class="header-logo" data-i18n="logo">ML-Интенсив</a>
+            <a href="#" class="header-logo">ML-Интенсив</a>
             <nav class="header-nav">
-                <a href="#about" data-i18n="nav_about">О курсе</a>
-                <a href="#forwhoom" data-i18n="nav_audience">Для кого?</a>
-                <a href="#mentor" data-i18n="nav_mentor">Ментор</a>
-                <a href="#format" data-i18n="nav_format">Формат</a>
-                <a href="#program" data-i18n="nav_program">Программа</a>
-                <a href="#pricing" data-i18n="nav_pricing">Тарифы</a>
-                <a href="#real-experience" data-i18n="nav_experience">Опыт</a>
-                <a href="#contacts" class="btn-small" data-i18n="nav_contact">Записаться</a>
-                <button class="lang-btn" id="langToggle">EN</button>
+                <a href="#about">О курсе</a>
+                <a href="#forwhoom">Для кого?</a>
+                <a href="#mentor">Ментор</a>
+                <a href="#format">Формат</a>
+                <a href="#program">Программа</a>
+                <a href="#pricing">Тарифы</a>
+                <a href="#contacts" class="btn-small">Записаться</a>
             </nav>
         </div>
     </header>
@@ -964,13 +938,13 @@
 
         <div class="container">
             <div class="hero-content">
-                <h1 data-i18n="hero_title">Машинное обучение<br />с нуля до профи.</h1>
-                <p class="subtitle" data-i18n="hero_subtitle">
+                <h1>Машинное обучение<br />с нуля до профи.</h1>
+                <p class="subtitle">
                     Освойте Data Science за короткий срок. Учебные проекты и кейсы, подготовка к собеседованиям и трудоустройству.
                 </p>
                 <div class="hero-buttons">
-                    <a href="https://t.me/terehinvi" target="_blank" class="btn btn-primary" data-i18n="hero_btn1">Связаться с менеджером</a>
-                    <a href="#pricing" class="btn btn-outline" data-i18n="hero_btn2">Выбрать тариф</a>
+                    <a href="https://t.me/terehinvi" target="_blank" class="btn btn-primary">Связаться с менеджером</a>
+                    <a href="#pricing" class="btn btn-outline">Выбрать тариф</a>
                 </div>
             </div>
         </div>
@@ -981,24 +955,24 @@
     <!-- ============================================ -->
     <section class="section" id="forwhoom">
         <div class="container">
-            <h2 class="section-title" data-i18n="audience_title">Для кого этот курс</h2>
-            <p class="section-subtitle" data-i18n="audience_subtitle">
+            <h2 class="section-title">Для кого этот курс</h2>
+            <p class="section-subtitle">
                 Курс подойдет тем, кто хочет войти в Data Science и применять ML в работе.
             </p>
             <div class="audience-grid">
-                <div class="audience-card" data-i18n="audience_card1">
+                <div class="audience-card">
                     <h3>🧑‍💻 Новички без опыта в ML</h3>
                     <p>Освоите основы машинного обучения, научитесь использовать ИИ-помощников для кода и поймете устройство ML-проектов.</p>
                 </div>
-                <div class="audience-card" data-i18n="audience_card2">
+                <div class="audience-card">
                     <h3>📊 Аналитики данных</h3>
                     <p>Перейдете от отчетности к прогнозированию и применению ML-моделей в рабочих задачах.</p>
                 </div>
-                <div class="audience-card" data-i18n="audience_card3">
+                <div class="audience-card">
                     <h3>👨‍💻 Разработчики</h3>
                     <p>Добавите в стек MLOps и основы проектирования ML-систем. Научитесь ускорять разработку нейросетями.</p>
                 </div>
-                <div class="audience-card" data-i18n="audience_card4">
+                <div class="audience-card">
                     <h3>👔 Менеджеры и тимлиды</h3>
                     <p>Начнете говорить с инженерами на одном языке, оценивать сроки и участвовать в обсуждении архитектуры.</p>
                 </div>
@@ -1013,8 +987,8 @@
 <!-- ============================================ -->
 <section class="section" id="mentor" style="background: rgba(255,255,255,0.02);">
     <div class="container">
-        <h2 class="section-title" data-i18n="mentor_title">О менторе</h2>
-        <p class="section-subtitle" data-i18n="mentor_subtitle">
+        <h2 class="section-title">О менторе</h2>
+        <p class="section-subtitle">
             Ваш наставник на протяжении всего курса
         </p>
 
@@ -1026,14 +1000,14 @@
 
             <!-- Информация о менторе -->
             <div class="mentor-info">
-                <h3 data-i18n="mentor_name">Виталий Терехов</h3>
-                <div class="mentor-title" data-i18n="mentor_title_job">Senior Data Scientist, опыт 8+ лет</div>
-                <p data-i18n="mentor_desc1">
+                <h3>Виталий Терехов</h3>
+                <div class="mentor-title">Senior Data Scientist, опыт 8+ лет</div>
+                <p>
                     Автор курса и главный ментор. Работал в крупных IT-компаниях, внедрял ML-решения для задач
                     прогнозирования, рекомендаций и компьютерного зрения. Учит не просто коду, а подходу к решению
                     реальных бизнес-задач.
                 </p>
-                <p style="margin-top: 12px;" data-i18n="mentor_desc2">
+                <p style="margin-top: 12px;">
                     🎓 Выпускник МФТИ. Ведет активный блог о Data Science, помогает студентам находить работу в IT.
                 </p>
 
@@ -1043,40 +1017,40 @@
                         <img src="../static/img.png" alt="Фото помощника" />
                     </div>
                     <div class="assistant-compact-info">
-                        <div class="assistant-compact-name" data-i18n="assistant_name">Настя Москва</div>
-                        <div class="assistant-compact-title" data-i18n="assistant_title">ML-инженер, куратор курса</div>
-                        <div class="assistant-compact-desc" data-i18n="assistant_desc">Помогает с домашими заданиями, разборами кода и отвечает на вопросы в чате.</div>
+                        <div class="assistant-compact-name">Настя Москва</div>
+                        <div class="assistant-compact-title">ML-инженер, куратор курса</div>
+                        <div class="assistant-compact-desc">Помогает с домашими заданиями, разборами кода и отвечает на вопросы в чате.</div>
                     </div>
                 </div>
             </div>
 
             <!-- Блок с отзывами -->
             <div class="mentor-reviews">
-                <h4 data-i18n="reviews_title">⭐ Отзывы учеников</h4>
+                <h4>⭐ Отзывы учеников</h4>
                 <div class="reviews-grid">
 
                     <!-- Отзыв 1 -->
                     <div class="review-item">
                         <div class="review-author">
-                            <span data-i18n="review1_author">Дмитрий Р.</span>
+                            <span>Дмитрий Р.</span>
                             <span class="stars">⭐⭐⭐⭐⭐</span>
                         </div>
-                        <div class="review-text" data-i18n="review1_text">
+                        <div class="review-text">
                             "Отличная программа! Понравился баланс теории и практики. Кураторы всегда на связи, помогают с домашними заданиями. Рекомендую всем, кто хочет войти в Data Science."
                         </div>
-                        <div class="review-date" data-i18n="review1_date">Выпуск 2025</div>
+                        <div class="review-date">Выпуск 2025</div>
                     </div>
 
                     <!-- Отзыв 2 -->
                     <div class="review-item">
                         <div class="review-author">
-                            <span data-i18n="review2_author">Екатерина М.</span>
+                            <span>Екатерина М.</span>
                             <span class="stars">⭐⭐⭐⭐⭐</span>
                         </div>
-                        <div class="review-text" data-i18n="review2_text">
+                        <div class="review-text">
                             "Изначально боялась, что не потяну, но ментор поддерживал на каждом этапе. Очень помогли живые вебинары и разбор ошибок. Уже получила оффер в крупную компанию!"
                         </div>
-                        <div class="review-date" data-i18n="review2_date">Выпуск 2026</div>
+                        <div class="review-date">Выпуск 2026</div>
                     </div>
 
                 </div>
@@ -1090,12 +1064,12 @@
     <!-- ============================================ -->
     <section class="section" id="format" style="background: rgba(255,255,255,0.02);">
         <div class="container">
-            <h2 class="section-title" data-i18n="requirements_title">Подойдет ли вам этот курс?</h2>
-            <p class="section-subtitle" data-i18n="requirements_subtitle">
+            <h2 class="section-title">Подойдет ли вам этот курс?</h2>
+            <p class="section-subtitle">
                 Для комфортного обучения желательно иметь базовую подготовку:
             </p>
             <div class="requirements-grid">
-                <div class="req-item" data-i18n="req1">
+                <div class="req-item">
                     <h4>🐍 Python</h4>
                     <ul>
                         <li>базовый синтаксис</li>
@@ -1103,7 +1077,7 @@
                         <li>простые типы данных</li>
                     </ul>
                 </div>
-                <div class="req-item" data-i18n="req2">
+                <div class="req-item">
                     <h4>📐 Математика</h4>
                     <ul>
                         <li>уравнения и графики</li>
@@ -1111,7 +1085,7 @@
                         <li>матрицы и операции</li>
                     </ul>
                 </div>
-                <div class="req-item" data-i18n="req3">
+                <div class="req-item">
                     <h4>📊 Статистика</h4>
                     <ul>
                         <li>среднее и медиана</li>
@@ -1119,7 +1093,7 @@
                         <li>нормальное распределение</li>
                     </ul>
                 </div>
-                <div class="req-item" data-i18n="req4">
+                <div class="req-item">
                     <h4>🛠 Инструменты</h4>
                     <ul>
                         <li>установка Jupyter</li>
@@ -1135,12 +1109,12 @@
         <br>
         <br>
         <div class="container">
-            <h2 class="section-title" data-i18n="format_title">Формат курса</h2>
-            <p class="section-subtitle" data-i18n="format_subtitle">
+            <h2 class="section-title">Формат курса</h2>
+            <p class="section-subtitle">
                 Все материалы остаются в личном кабинете навсегда.
             </p>
             <div class="format-grid">
-                <div class="format-card" data-i18n="format1">
+                <div class="format-card">
                     <h3>⏳ Длительность</h3>
                     <ul>
                         <li><strong>Тариф 1:</strong> 4 месяца</li>
@@ -1150,7 +1124,7 @@
                         <li>2 месяца — подготовка к собеседованиям</li>
                     </ul>
                 </div>
-                <div class="format-card" data-i18n="format2">
+                <div class="format-card">
                     <h3>📹 Формат занятий</h3>
                     <ul>
                         <li>Видеолекции (1,5–2,5 ч/нед)</li>
@@ -1159,7 +1133,7 @@
                         <li>Итоговый проект для портфолио</li>
                     </ul>
                 </div>
-                <div class="format-card" data-i18n="format3">
+                <div class="format-card">
                     <h3>💬 Коммуникация</h3>
                     <ul>
                         <li>Платформа: <strong>GetCourse</strong></li>
@@ -1177,12 +1151,12 @@
     <!-- ============================================ -->
     <section class="section" id="program" style="background: rgba(255,255,255,0.02);">
         <div class="container">
-            <h2 class="section-title" data-i18n="program_title">Программа курса</h2>
-            <p class="section-subtitle" data-i18n="program_subtitle">
+            <h2 class="section-title">Программа курса</h2>
+            <p class="section-subtitle">
                 Обновленная программа с упором на практику и современные инструменты.
             </p>
 
-            <div class="module" data-i18n="module1">
+            <div class="module">
                 <div class="module-header">
                     <h3>Модуль 1 — Подготовительный: Python и математика</h3>
                     <span>База</span>
@@ -1200,7 +1174,7 @@
                 </div>
             </div>
 
-            <div class="module" data-i18n="module2">
+            <div class="module">
                 <div class="module-header">
                     <h3>Модуль 2 — Алгоритмы машинного обучения</h3>
                     <span>Основной</span>
@@ -1218,7 +1192,7 @@
                 </div>
             </div>
 
-            <div class="module" data-i18n="module3">
+            <div class="module">
                 <div class="module-header">
                     <h3>Модуль 3 — Оценка качества</h3>
                     <span>Критично</span>
@@ -1234,7 +1208,7 @@
                 </div>
             </div>
 
-            <div class="module" data-i18n="module4">
+            <div class="module">
                 <div class="module-header">
                     <h3>Модуль 4 — Внедрение ML в бизнес</h3>
                     <span>Практика</span>
@@ -1250,7 +1224,7 @@
                 </div>
             </div>
 
-            <div class="module" data-i18n="module5">
+            <div class="module">
                 <div class="module-header">
                     <h3>Модуль 5 — Применение ML в бизнесе</h3>
                     <span>Кейсы</span>
@@ -1269,7 +1243,7 @@
                 </div>
             </div>
 
-            <div class="module" style="border-left: 4px solid #a3e635;" data-i18n="module6">
+            <div class="module" style="border-left: 4px solid #a3e635;">
                 <div class="module-header">
                     <h3>Дополнительно — Подготовка к поиску работы</h3>
                     <span>Карьера</span>
@@ -1293,12 +1267,12 @@
     <!-- ============================================ -->
     <section class="section" id="pricing">
         <div class="container">
-            <h2 class="section-title" data-i18n="pricing_title">Выберите тариф</h2>
-            <p class="section-subtitle" data-i18n="pricing_subtitle">
+            <h2 class="section-title">Выберите тариф</h2>
+            <p class="section-subtitle">
                 Оплата по частям — рассрочка на 18 месяцев.
             </p>
             <div class="pricing-grid">
-                <div class="pricing-card" data-i18n="pricing1">
+                <div class="pricing-card">
                     <h3>Тариф 1</h3>
                     <div class="price">8 333 ₽ <small>/мес</small></div>
                     <div class="price-desc">Полная стоимость: 150 000 ₽</div>
@@ -1308,11 +1282,11 @@
                         <li>Применение ML в бизнес-кейсах</li>
                         <li>Практические задачи</li>
                     </ul>
-                    <a href="#" class="btn btn-primary btn-block" data-i18n="pricing_btn">Выбрать тариф</a>
+                    <a href="#" class="btn btn-primary btn-block">Выбрать тариф</a>
                 </div>
 
-                <div class="pricing-card popular" data-i18n="pricing2">
-                    <div style="background: #a3e635; color: #0a0e1a; padding: 4px 16px; border-radius: 40px; display: inline-block; font-size: 0.8rem; font-weight: 700; margin-bottom: 12px;" data-i18n="pricing_popular">
+                <div class="pricing-card popular">
+                    <div style="background: #a3e635; color: #0a0e1a; padding: 4px 16px; border-radius: 40px; display: inline-block; font-size: 0.8rem; font-weight: 700; margin-bottom: 12px;">
                         🚀 Самый популярный
                     </div>
                     <h3>Тариф 2</h3>
@@ -1327,101 +1301,8 @@
                         <li>Поддержка кураторов</li>
                         <li>Бессрочный доступ к обновлениям</li>
                     </ul>
-                    <a href="#" class="btn btn-primary btn-block" data-i18n="pricing_btn">Выбрать тариф</a>
+                    <a href="#" class="btn btn-primary btn-block">Выбрать тариф</a>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- БЛОК: РЕАЛЬНЫЙ ОПЫТ И СТАЖИРОВКА             -->
-    <!-- ============================================ -->
-    <section class="section" id="real-experience" style="background: rgba(10, 14, 26, 0.8); border-bottom: 1px solid rgba(163, 230, 53, 0.15);">
-        <div class="container">
-            <div class="experience-header" style="text-align: center; max-width: 800px; margin: 0 auto 48px;">
-                <span style="display: inline-block; background: rgba(163, 230, 53, 0.12); color: #a3e635; padding: 4px 18px; border-radius: 40px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;" data-i18n="exp_badge">
-                    Вместо накрутки — опыты и реальные знания
-                </span>
-                <h2 class="section-title" style="margin-bottom: 12px;" data-i18n="exp_title">
-                    От теории — к <span style="color: #a3e635;">реальным задачам</span>
-                </h2>
-                <p class="section-subtitle" style="margin-bottom: 0; font-size: 1.1rem; color: #94a3b8;" data-i18n="exp_subtitle">
-                    Мы не даём «галочки». Мы даём навыки, которые проверяются на практике.
-                </p>
-            </div>
-
-            <div class="experience-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
-
-                <!-- Карточка 1: Стажировка -->
-                <div class="exp-card" style="background: rgba(255, 255, 255, 0.04); border-radius: 20px; padding: 32px 28px; border: 1px solid rgba(255, 255, 255, 0.06); transition: 0.3s ease; backdrop-filter: blur(4px);">
-                    <div style="font-size: 2.2rem; margin-bottom: 12px;">💼</div>
-                    <h3 style="color: #ffffff; font-size: 1.3rem; margin-bottom: 8px; font-weight: 600;" data-i18n="exp_card1_title">Стажировка</h3>
-                    <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.7; margin-bottom: 16px;" data-i18n="exp_card1_desc">
-                        Погружение в рабочий процесс с первого дня. Вы не просто смотрите — вы участвуете в жизни проекта.
-                    </p>
-                    <ul style="list-style: none; padding: 0; margin: 0; color: #cbd5e1; font-size: 0.9rem;">
-                        <li style="padding: 4px 0 4px 24px; position: relative; border-bottom: 1px solid rgba(255,255,255,0.04);">
-                            <span style="position: absolute; left: 0; color: #a3e635;">▹</span> <span data-i18n="exp_card1_li1">Работа в команде с ментором</span>
-                        </li>
-                        <li style="padding: 4px 0 4px 24px; position: relative; border-bottom: 1px solid rgba(255,255,255,0.04);">
-                            <span style="position: absolute; left: 0; color: #a3e635;">▹</span> <span data-i18n="exp_card1_li2">Регулярный код-ревью</span>
-                        </li>
-                        <li style="padding: 4px 0 4px 24px; position: relative;">
-                            <span style="position: absolute; left: 0; color: #a3e635;">▹</span> <span data-i18n="exp_card1_li3">Обратная связь по итогам спринта</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Карточка 2: Реальный опыт -->
-                <div class="exp-card" style="background: rgba(255, 255, 255, 0.04); border-radius: 20px; padding: 32px 28px; border: 1px solid rgba(255, 255, 255, 0.06); transition: 0.3s ease; backdrop-filter: blur(4px); border-color: rgba(163, 230, 53, 0.2);">
-                    <div style="font-size: 2.2rem; margin-bottom: 12px;">🚀</div>
-                    <h3 style="color: #ffffff; font-size: 1.3rem; margin-bottom: 8px; font-weight: 600;" data-i18n="exp_card2_title">Реальный опыт</h3>
-                    <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.7; margin-bottom: 16px;" data-i18n="exp_card2_desc">
-                        Проекты, которые решают настоящие бизнес-задачи. Вы учитесь на ошибках и находите решения в условиях неопределённости.
-                    </p>
-                    <ul style="list-style: none; padding: 0; margin: 0; color: #cbd5e1; font-size: 0.9rem;">
-                        <li style="padding: 4px 0 4px 24px; position: relative; border-bottom: 1px solid rgba(255,255,255,0.04);">
-                            <span style="position: absolute; left: 0; color: #a3e635;">▹</span> <span data-i18n="exp_card2_li1">Работа с реальными данными</span>
-                        </li>
-                        <li style="padding: 4px 0 4px 24px; position: relative; border-bottom: 1px solid rgba(255,255,255,0.04);">
-                            <span style="position: absolute; left: 0; color: #a3e635;">▹</span> <span data-i18n="exp_card2_li2">Постановка и защита гипотез</span>
-                        </li>
-                        <li style="padding: 4px 0 4px 24px; position: relative;">
-                            <span style="position: absolute; left: 0; color: #a3e635;">▹</span> <span data-i18n="exp_card2_li3">Презентация результатов заказчику</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Карточка 3: Мышление джуна -->
-                <div class="exp-card" style="background: rgba(255, 255, 255, 0.04); border-radius: 20px; padding: 32px 28px; border: 1px solid rgba(255, 255, 255, 0.06); transition: 0.3s ease; backdrop-filter: blur(4px);">
-                    <div style="font-size: 2.2rem; margin-bottom: 12px;">🧠</div>
-                    <h3 style="color: #ffffff; font-size: 1.3rem; margin-bottom: 8px; font-weight: 600;" data-i18n="exp_card3_title">Мышление работника джуна</h3>
-                    <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.7; margin-bottom: 16px;" data-i18n="exp_card3_desc">
-                        Мы формируем не просто исполнителя, а специалиста, который умеет думать, задавать вопросы и брать ответственность.
-                    </p>
-                    <ul style="list-style: none; padding: 0; margin: 0; color: #cbd5e1; font-size: 0.9rem;">
-                        <li style="padding: 4px 0 4px 24px; position: relative; border-bottom: 1px solid rgba(255,255,255,0.04);">
-                            <span style="position: absolute; left: 0; color: #a3e635;">▹</span> <span data-i18n="exp_card3_li1">Умение гуглить и разбираться</span>
-                        </li>
-                        <li style="padding: 4px 0 4px 24px; position: relative; border-bottom: 1px solid rgba(255,255,255,0.04);">
-                            <span style="position: absolute; left: 0; color: #a3e635;">▹</span> <span data-i18n="exp_card3_li2">Коммуникация в команде</span>
-                        </li>
-                        <li style="padding: 4px 0 4px 24px; position: relative;">
-                            <span style="position: absolute; left: 0; color: #a3e635;">▹</span> <span data-i18n="exp_card3_li3">Самоорганизация и дедлайны</span>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <!-- Дополнительный блок с цитатой -->
-            <div style="text-align: center; margin-top: 48px; padding: 24px; background: rgba(163, 230, 53, 0.04); border-radius: 16px; border: 1px solid rgba(163, 230, 53, 0.1); max-width: 700px; margin-left: auto; margin-right: auto;">
-                <p style="color: #cbd5e1; font-size: 1rem; font-style: italic; margin-bottom: 0;" data-i18n="exp_quote">
-                    «Настоящий опыт — это когда ты сам прошёл через трудности, нашёл решение и можешь объяснить, почему оно работает.»
-                </p>
-                <p style="color: #a3e635; font-weight: 600; margin-top: 8px; font-size: 0.9rem;" data-i18n="exp_quote_author">
-                    Именно так мы готовим к работе.
-                </p>
             </div>
         </div>
     </section>
@@ -1431,22 +1312,22 @@
     <!-- ============================================ -->
     <section class="section" id="contacts" style="background: rgba(255,255,255,0.02);">
         <div class="container">
-            <h2 class="section-title" data-i18n="contact_title">Остались вопросы?</h2>
-            <p class="section-subtitle" data-i18n="contact_subtitle">
+            <h2 class="section-title">Остались вопросы?</h2>
+            <p class="section-subtitle">
                 Заполните форму, и менеджер свяжется с вами, чтобы ответить на все вопросы.
             </p>
             <div class="form-box">
                 <form id="contactForm" action="#" method="POST">
-                    <input type="text" id="userName" name="name" placeholder="Ваше имя" required data-i18n-placeholder="form_name" />
-                    <input type="email" id="userEmail" name="email" placeholder="Email" required data-i18n-placeholder="form_email" />
-                    <input type="tel" id="userPhone" name="phone" placeholder="+7 (___) ___-__-__" data-i18n-placeholder="form_phone" />
-                    <input type="text" id="userTelegram" name="telegram" placeholder="@telegram" data-i18n-placeholder="form_telegram" />
-                    <textarea id="userMessage" name="message" placeholder="Ваш вопрос" required data-i18n-placeholder="form_message"></textarea>
-                    <button type="submit" class="btn btn-primary btn-block" data-i18n="form_submit">Отправить</button>
+                    <input type="text" id="userName" name="name" placeholder="Ваше имя" required />
+                    <input type="email" id="userEmail" name="email" placeholder="Email" required />
+                    <input type="tel" id="userPhone" name="phone" placeholder="+7 (___) ___-__-__" />
+                    <input type="text" id="userTelegram" name="telegram" placeholder="@telegram" />
+                    <textarea id="userMessage" name="message" placeholder="Ваш вопрос" required></textarea>
+                    <button type="submit" class="btn btn-primary btn-block">Отправить</button>
                 </form>
                 <div id="formMessage" class="form-message"></div>
 
-                <p style="margin-top: 16px; font-size: 0.9rem; color: #94a3b8;" data-i18n="form_contact">
+                <p style="margin-top: 16px; font-size: 0.9rem; color: #94a3b8;">
                     Или напишите менеджеру в Telegram:
                     <a href="https://t.me/terehinvi" target="_blank" style="color: #a3e635; font-weight: 500;">@terehinvi</a>
                 </p>
@@ -1459,14 +1340,18 @@
     <!-- ============================================ -->
     <footer class="footer">
         <div class="container">
+<!--            <p>-->
+<!--                <a href="https://t.me/ML_through_RL" target="_blank">📱 Telegram-канал</a> ·-->
+<!--                <a href="https://grebnevrl.ru" target="_blank">📚 Материалы курса</a>-->
+<!--            </p>-->
             <p style="margin-top: 8px;">
-                <a href="#" data-i18n="footer_copyright">2022-2026 copyright ©</a>
+                <a href="#">2022-2026 copyright ©</a>
             </p>
         </div>
     </footer>
 
     <!-- ============================================ -->
-    <!-- JS ДЛЯ ФОРМЫ, АККОРДЕОНОВ И ПЕРЕКЛЮЧЕНИЯ ЯЗЫКА -->
+    <!-- JS ДЛЯ ФОРМЫ И АККОРДЕОНОВ                 -->
     <!-- ============================================ -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -1588,237 +1473,6 @@
                     messageDiv.className = 'form-message';
                 }, 10000);
             }
-
-            // ==========================================
-            // 3. ПЕРЕКЛЮЧЕНИЕ ЯЗЫКА (RU/EN)
-            // ==========================================
-            const translations = {
-                ru: {
-                    logo: 'ML-Интенсив',
-                    nav_about: 'О курсе',
-                    nav_audience: 'Для кого?',
-                    nav_mentor: 'Ментор',
-                    nav_format: 'Формат',
-                    nav_program: 'Программа',
-                    nav_pricing: 'Тарифы',
-                    nav_experience: 'Опыт',
-                    nav_contact: 'Записаться',
-                    hero_title: 'Машинное обучение<br />с нуля до профи.',
-                    hero_subtitle: 'Освойте Data Science за короткий срок. Учебные проекты и кейсы, подготовка к собеседованиям и трудоустройству.',
-                    hero_btn1: 'Связаться с менеджером',
-                    hero_btn2: 'Выбрать тариф',
-                    audience_title: 'Для кого этот курс',
-                    audience_subtitle: 'Курс подойдет тем, кто хочет войти в Data Science и применять ML в работе.',
-                    audience_card1: '<h3>🧑‍💻 Новички без опыта в ML</h3><p>Освоите основы машинного обучения, научитесь использовать ИИ-помощников для кода и поймете устройство ML-проектов.</p>',
-                    audience_card2: '<h3>📊 Аналитики данных</h3><p>Перейдете от отчетности к прогнозированию и применению ML-моделей в рабочих задачах.</p>',
-                    audience_card3: '<h3>👨‍💻 Разработчики</h3><p>Добавите в стек MLOps и основы проектирования ML-систем. Научитесь ускорять разработку нейросетями.</p>',
-                    audience_card4: '<h3>👔 Менеджеры и тимлиды</h3><p>Начнете говорить с инженерами на одном языке, оценивать сроки и участвовать в обсуждении архитектуры.</p>',
-                    mentor_title: 'О менторе',
-                    mentor_subtitle: 'Ваш наставник на протяжении всего курса',
-                    mentor_name: 'Виталий Терехов',
-                    mentor_title_job: 'Senior Data Scientist, опыт 8+ лет',
-                    mentor_desc1: 'Автор курса и главный ментор. Работал в крупных IT-компаниях, внедрял ML-решения для задач прогнозирования, рекомендаций и компьютерного зрения. Учит не просто коду, а подходу к решению реальных бизнес-задач.',
-                    mentor_desc2: '🎓 Выпускник МФТИ. Ведет активный блог о Data Science, помогает студентам находить работу в IT.',
-                    assistant_name: 'Настя Москва',
-                    assistant_title: 'ML-инженер, куратор курса',
-                    assistant_desc: 'Помогает с домашими заданиями, разборами кода и отвечает на вопросы в чате.',
-                    reviews_title: '⭐ Отзывы учеников',
-                    review1_author: 'Дмитрий Р.',
-                    review1_text: '"Отличная программа! Понравился баланс теории и практики. Кураторы всегда на связи, помогают с домашними заданиями. Рекомендую всем, кто хочет войти в Data Science."',
-                    review1_date: 'Выпуск 2025',
-                    review2_author: 'Екатерина М.',
-                    review2_text: '"Изначально боялась, что не потяну, но ментор поддерживал на каждом этапе. Очень помогли живые вебинары и разбор ошибок. Уже получила оффер в крупную компанию!"',
-                    review2_date: 'Выпуск 2026',
-                    requirements_title: 'Подойдет ли вам этот курс?',
-                    requirements_subtitle: 'Для комфортного обучения желательно иметь базовую подготовку:',
-                    req1: '<h4>🐍 Python</h4><ul><li>базовый синтаксис</li><li>циклы и функции</li><li>простые типы данных</li></ul>',
-                    req2: '<h4>📐 Математика</h4><ul><li>уравнения и графики</li><li>производная и градиент</li><li>матрицы и операции</li></ul>',
-                    req3: '<h4>📊 Статистика</h4><ul><li>среднее и медиана</li><li>дисперсия</li><li>нормальное распределение</li></ul>',
-                    req4: '<h4>🛠 Инструменты</h4><ul><li>установка Jupyter</li><li>импорт библиотек</li><li>запуск Python-кода</li></ul>',
-                    format_title: 'Формат курса',
-                    format_subtitle: 'Все материалы остаются в личном кабинете навсегда.',
-                    format1: '<h3>⏳ Длительность</h3><ul><li><strong>Тариф 1:</strong> 4 месяца</li><li><strong>Тариф 2:</strong> 6 месяцев (с проектом)</li><li>1 месяц — подготовка (математика + Python)</li><li>3 месяца — базовый ML + бизнес-кейсы</li><li>2 месяца — подготовка к собеседованиям</li></ul>',
-                    format2: '<h3>📹 Формат занятий</h3><ul><li>Видеолекции (1,5–2,5 ч/нед)</li><li>Вебинары с ответами на вопросы</li><li>Домашние задания в Jupyter Notebook</li><li>Итоговый проект для портфолио</li></ul>',
-                    format3: '<h3>💬 Коммуникация</h3><ul><li>Платформа: <strong>GetCourse</strong></li><li>Закрытый Telegram-чат группы</li><li>Telegram-канал с оповещениями</li><li>Чат выпускников после сдачи домашек</li></ul>',
-                    program_title: 'Программа курса',
-                    program_subtitle: 'Обновленная программа с упором на практику и современные инструменты.',
-                    module1: '<div class="module-header"><h3>Модуль 1 — Подготовительный: Python и математика</h3><span>База</span></div><div class="module-body"><ul><li>Теория вероятностей</li><li>Алгоритмы и структуры данных</li><li>Основы программирования на Python</li></ul><ul><li>Математический анализ</li><li>Линейная алгебра и многомерный анализ</li></ul></div>',
-                    module2: '<div class="module-header"><h3>Модуль 2 — Алгоритмы машинного обучения</h3><span>Основной</span></div><div class="module-body"><ul><li>Простые методы (kNN, Наивный Байес)</li><li>Обучение без учителя (K-Means, кластеризация)</li><li>Введение в нейронные сети</li></ul><ul><li>Линейные модели (регрессия, SVM)</li><li>Деревья и ансамбли (Random Forest, Gradient Boosting)</li></ul></div>',
-                    module3: '<div class="module-header"><h3>Модуль 3 — Оценка качества</h3><span>Критично</span></div><div class="module-body"><ul><li>Метрики классификации и регрессии</li><li>Валидация моделей</li></ul><ul><li>A/B-тестирование (теория + практика)</li></ul></div>',
-                    module4: '<div class="module-header"><h3>Модуль 4 — Внедрение ML в бизнес</h3><span>Практика</span></div><div class="module-body"><ul><li>AI-ассистенты для анализа данных</li><li>Основы MLOps</li></ul><ul><li>ML System Design</li></ul></div>',
-                    module5: '<div class="module-header"><h3>Модуль 5 — Применение ML в бизнесе</h3><span>Кейсы</span></div><div class="module-body"><ul><li>Рекомендательные системы</li><li>Динамическое ценообразование</li><li>ML-лидогенерация</li></ul><ul><li>Скоринги и антифрод</li><li>Приоритизация инвестиций</li><li>Автоматизация с Deep Learning</li></ul></div>',
-                    module6: '<div class="module-header"><h3>Дополнительно — Подготовка к поиску работы</h3><span>Карьера</span></div><div class="module-body"><ul><li>Разбор типовых вопросов на собеседованиях</li><li>Подготовка резюме</li></ul><ul><li>Стратегия прохождения интервью</li><li>Рекомендации от экспертов</li></ul></div>',
-                    pricing_title: 'Выберите тариф',
-                    pricing_subtitle: 'Оплата по частям — рассрочка на 18 месяцев.',
-                    pricing1: '<h3>Тариф 1</h3><div class="price">8 333 ₽ <small>/мес</small></div><div class="price-desc">Полная стоимость: 150 000 ₽</div><ul><li>Подготовительный модуль</li><li>База ML</li><li>Применение ML в бизнес-кейсах</li><li>Практические задачи</li></ul>',
-                    pricing2: '<h3>Тариф 2</h3><div class="price">10 278 ₽ <small>/мес</small></div><div class="price-desc">Полная стоимость: 185 000 ₽</div><ul><li>Всё, что в Тарифе 1</li><li>Подготовка к собеседованиям</li><li>Карьерный вебинар с ML-инженером</li><li>Разбор резюме</li><li>Итоговый проект</li><li>Поддержка кураторов</li><li>Бессрочный доступ к обновлениям</li></ul>',
-                    pricing_popular: '🚀 Самый популярный',
-                    pricing_btn: 'Выбрать тариф',
-                    exp_badge: 'Вместо накрутки — опыты и реальные знания',
-                    exp_title: 'От теории — к <span style="color: #a3e635;">реальным задачам</span>',
-                    exp_subtitle: 'Мы не даём «галочки». Мы даём навыки, которые проверяются на практике.',
-                    exp_card1_title: 'Стажировка',
-                    exp_card1_desc: 'Погружение в рабочий процесс с первого дня. Вы не просто смотрите — вы участвуете в жизни проекта.',
-                    exp_card1_li1: 'Работа в команде с ментором',
-                    exp_card1_li2: 'Регулярный код-ревью',
-                    exp_card1_li3: 'Обратная связь по итогам спринта',
-                    exp_card2_title: 'Реальный опыт',
-                    exp_card2_desc: 'Проекты, которые решают настоящие бизнес-задачи. Вы учитесь на ошибках и находите решения в условиях неопределённости.',
-                    exp_card2_li1: 'Работа с реальными данными',
-                    exp_card2_li2: 'Постановка и защита гипотез',
-                    exp_card2_li3: 'Презентация результатов заказчику',
-                    exp_card3_title: 'Мышление работника джуна',
-                    exp_card3_desc: 'Мы формируем не просто исполнителя, а специалиста, который умеет думать, задавать вопросы и брать ответственность.',
-                    exp_card3_li1: 'Умение гуглить и разбираться',
-                    exp_card3_li2: 'Коммуникация в команде',
-                    exp_card3_li3: 'Самоорганизация и дедлайны',
-                    exp_quote: '«Настоящий опыт — это когда ты сам прошёл через трудности, нашёл решение и можешь объяснить, почему оно работает.»',
-                    exp_quote_author: 'Именно так мы готовим к работе.',
-                    contact_title: 'Остались вопросы?',
-                    contact_subtitle: 'Заполните форму, и менеджер свяжется с вами, чтобы ответить на все вопросы.',
-                    form_name: 'Ваше имя',
-                    form_email: 'Email',
-                    form_phone: '+7 (___) ___-__-__',
-                    form_telegram: '@telegram',
-                    form_message: 'Ваш вопрос',
-                    form_submit: 'Отправить',
-                    form_contact: 'Или напишите менеджеру в Telegram: <a href="https://t.me/terehinvi" target="_blank" style="color: #a3e635; font-weight: 500;">@terehinvi</a>',
-                    footer_copyright: '2022-2026 copyright ©'
-                },
-                en: {
-                    logo: 'ML-Intensive',
-                    nav_about: 'About',
-                    nav_audience: 'For whom?',
-                    nav_mentor: 'Mentor',
-                    nav_format: 'Format',
-                    nav_program: 'Program',
-                    nav_pricing: 'Pricing',
-                    nav_experience: 'Experience',
-                    nav_contact: 'Enroll',
-                    hero_title: 'Machine Learning<br />from zero to pro.',
-                    hero_subtitle: 'Master Data Science in a short time. Hands-on projects and cases, interview preparation and job placement.',
-                    hero_btn1: 'Contact manager',
-                    hero_btn2: 'Choose plan',
-                    audience_title: 'Who is this course for?',
-                    audience_subtitle: 'The course is for those who want to get into Data Science and apply ML at work.',
-                    audience_card1: '<h3>🧑‍💻 Beginners with no ML experience</h3><p>Learn the basics of machine learning, use AI assistants for code, and understand the structure of ML projects.</p>',
-                    audience_card2: '<h3>📊 Data Analysts</h3><p>Move from reporting to forecasting and applying ML models in real tasks.</p>',
-                    audience_card3: '<h3>👨‍💻 Developers</h3><p>Add MLOps and ML system design to your stack. Learn to accelerate development with neural networks.</p>',
-                    audience_card4: '<h3>👔 Managers and Team Leads</h3><p>Start speaking the same language as engineers, estimate timelines and participate in architecture discussions.</p>',
-                    mentor_title: 'About the mentor',
-                    mentor_subtitle: 'Your guide throughout the course',
-                    mentor_name: 'Vitaly Terekhov',
-                    mentor_title_job: 'Senior Data Scientist, 8+ years of experience',
-                    mentor_desc1: 'Course author and lead mentor. Worked at large IT companies, implemented ML solutions for forecasting, recommendations and computer vision. Teaches not just code, but an approach to solving real business problems.',
-                    mentor_desc2: '🎓 MIPT graduate. Runs an active blog about Data Science, helps students find jobs in IT.',
-                    assistant_name: 'Anastasia Moskva',
-                    assistant_title: 'ML Engineer, course curator',
-                    assistant_desc: 'Helps with homework, code reviews and answers questions in the chat.',
-                    reviews_title: '⭐ Student reviews',
-                    review1_author: 'Dmitry R.',
-                    review1_text: '"Great program! I liked the balance of theory and practice. Curators are always in touch, helping with homework. I recommend it to everyone who wants to get into Data Science."',
-                    review1_date: 'Graduate 2025',
-                    review2_author: 'Ekaterina M.',
-                    review2_text: '"I was afraid I wouldn\'t keep up, but the mentor supported me at every stage. Live webinars and error analysis helped a lot. I\'ve already received an offer from a major company!"',
-                    review2_date: 'Graduate 2026',
-                    requirements_title: 'Is this course right for you?',
-                    requirements_subtitle: 'For comfortable learning, it is advisable to have basic preparation:',
-                    req1: '<h4>🐍 Python</h4><ul><li>basic syntax</li><li>loops and functions</li><li>simple data types</li></ul>',
-                    req2: '<h4>📐 Mathematics</h4><ul><li>equations and graphs</li><li>derivative and gradient</li><li>matrices and operations</li></ul>',
-                    req3: '<h4>📊 Statistics</h4><ul><li>mean and median</li><li>variance</li><li>normal distribution</li></ul>',
-                    req4: '<h4>🛠 Tools</h4><ul><li>installing Jupyter</li><li>importing libraries</li><li>running Python code</li></ul>',
-                    format_title: 'Course format',
-                    format_subtitle: 'All materials stay in your personal account forever.',
-                    format1: '<h3>⏳ Duration</h3><ul><li><strong>Plan 1:</strong> 4 months</li><li><strong>Plan 2:</strong> 6 months (with project)</li><li>1 month — preparation (math + Python)</li><li>3 months — core ML + business cases</li><li>2 months — interview preparation</li></ul>',
-                    format2: '<h3>📹 Class format</h3><ul><li>Video lectures (1.5–2.5 hrs/week)</li><li>Webinars with Q&A</li><li>Homework in Jupyter Notebook</li><li>Final project for portfolio</li></ul>',
-                    format3: '<h3>💬 Communication</h3><ul><li>Platform: <strong>GetCourse</strong></li><li>Private Telegram group</li><li>Telegram channel with notifications</li><li>Alumni chat after completing homework</li></ul>',
-                    program_title: 'Course program',
-                    program_subtitle: 'Updated program with a focus on practice and modern tools.',
-                    module1: '<div class="module-header"><h3>Module 1 — Preparatory: Python and Math</h3><span>Base</span></div><div class="module-body"><ul><li>Probability theory</li><li>Algorithms and data structures</li><li>Python basics</li></ul><ul><li>Mathematical analysis</li><li>Linear algebra and multivariate analysis</li></ul></div>',
-                    module2: '<div class="module-header"><h3>Module 2 — Machine Learning Algorithms</h3><span>Core</span></div><div class="module-body"><ul><li>Simple methods (kNN, Naive Bayes)</li><li>Unsupervised learning (K-Means, clustering)</li><li>Introduction to neural networks</li></ul><ul><li>Linear models (regression, SVM)</li><li>Trees and ensembles (Random Forest, Gradient Boosting)</li></ul></div>',
-                    module3: '<div class="module-header"><h3>Module 3 — Quality Assessment</h3><span>Critical</span></div><div class="module-body"><ul><li>Classification and regression metrics</li><li>Model validation</li></ul><ul><li>A/B testing (theory + practice)</li></ul></div>',
-                    module4: '<div class="module-header"><h3>Module 4 — ML in Business</h3><span>Practice</span></div><div class="module-body"><ul><li>AI assistants for data analysis</li><li>MLOps basics</li></ul><ul><li>ML System Design</li></ul></div>',
-                    module5: '<div class="module-header"><h3>Module 5 — Applying ML in Business</h3><span>Cases</span></div><div class="module-body"><ul><li>Recommender systems</li><li>Dynamic pricing</li><li>ML lead generation</li></ul><ul><li>Scoring and anti-fraud</li><li>Investment prioritization</li><li>Automation with Deep Learning</li></ul></div>',
-                    module6: '<div class="module-header"><h3>Bonus — Job Search Preparation</h3><span>Career</span></div><div class="module-body"><ul><li>Review of typical interview questions</li><li>Resume preparation</li></ul><ul><li>Interview strategy</li><li>Expert recommendations</li></ul></div>',
-                    pricing_title: 'Choose your plan',
-                    pricing_subtitle: 'Pay in installments — 18-month payment plan.',
-                    pricing1: '<h3>Plan 1</h3><div class="price">$100 <small>/mo</small></div><div class="price-desc">Total: $1,800</div><ul><li>Preparatory module</li><li>ML basics</li><li>ML in business cases</li><li>Practical tasks</li></ul>',
-                    pricing2: '<h3>Plan 2</h3><div class="price">$125 <small>/mo</small></div><div class="price-desc">Total: $2,220</div><ul><li>Everything in Plan 1</li><li>Interview preparation</li><li>Career webinar with ML engineer</li><li>Resume review</li><li>Final project</li><li>Curator support</li><li>Lifetime access to updates</li></ul>',
-                    pricing_popular: '🚀 Most popular',
-                    pricing_btn: 'Choose plan',
-                    exp_badge: 'Instead of fake credentials — real experience and knowledge',
-                    exp_title: 'From theory to <span style="color: #a3e635;">real-world challenges</span>',
-                    exp_subtitle: 'We don\'t give "checkmarks". We give skills that are tested in practice.',
-                    exp_card1_title: 'Internship',
-                    exp_card1_desc: 'Immersion in the workflow from day one. You don\'t just watch — you participate in the project\'s life.',
-                    exp_card1_li1: 'Working in a team with a mentor',
-                    exp_card1_li2: 'Regular code reviews',
-                    exp_card1_li3: 'Feedback after each sprint',
-                    exp_card2_title: 'Real Experience',
-                    exp_card2_desc: 'Projects that solve real business problems. You learn from mistakes and find solutions in uncertain conditions.',
-                    exp_card2_li1: 'Working with real data',
-                    exp_card2_li2: 'Formulating and defending hypotheses',
-                    exp_card2_li3: 'Presenting results to stakeholders',
-                    exp_card3_title: 'Junior Mindset',
-                    exp_card3_desc: 'We shape not just an executor, but a specialist who can think, ask questions and take responsibility.',
-                    exp_card3_li1: 'Ability to research and find solutions',
-                    exp_card3_li2: 'Team communication',
-                    exp_card3_li3: 'Self-organization and meeting deadlines',
-                    exp_quote: '"Real experience is when you\'ve been through difficulties, found a solution and can explain why it works."',
-                    exp_quote_author: 'That\'s how we prepare you for the job.',
-                    contact_title: 'Have questions?',
-                    contact_subtitle: 'Fill out the form and our manager will contact you to answer all your questions.',
-                    form_name: 'Your name',
-                    form_email: 'Email',
-                    form_phone: '+1 (___) ___-____',
-                    form_telegram: '@telegram',
-                    form_message: 'Your question',
-                    form_submit: 'Send',
-                    form_contact: 'Or message us on Telegram: <a href="https://t.me/terehinvi" target="_blank" style="color: #a3e635; font-weight: 500;">@terehinvi</a>',
-                    footer_copyright: '2022-2026 copyright ©'
-                }
-            };
-
-            let currentLang = 'ru';
-
-            function setLanguage(lang) {
-                currentLang = lang;
-                // Обновляем текст для всех элементов с data-i18n
-                document.querySelectorAll('[data-i18n]').forEach(el => {
-                    const key = el.getAttribute('data-i18n');
-                    if (translations[lang] && translations[lang][key] !== undefined) {
-                        if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-                            // Для полей ввода используем placeholder
-                            const placeholderKey = el.getAttribute('data-i18n-placeholder');
-                            if (placeholderKey && translations[lang][placeholderKey]) {
-                                el.placeholder = translations[lang][placeholderKey];
-                            }
-                        } else {
-                            el.innerHTML = translations[lang][key];
-                        }
-                    }
-                });
-
-                // Обновляем placeholder для полей ввода отдельно
-                document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-                    const key = el.getAttribute('data-i18n-placeholder');
-                    if (translations[lang] && translations[lang][key] !== undefined) {
-                        el.placeholder = translations[lang][key];
-                    }
-                });
-
-                // Меняем текст на кнопке
-                document.getElementById('langToggle').textContent = lang === 'ru' ? 'EN' : 'RU';
-            }
-
-            document.getElementById('langToggle').addEventListener('click', function() {
-                const newLang = currentLang === 'ru' ? 'en' : 'ru';
-                setLanguage(newLang);
-            });
-
-            // Устанавливаем русский по умолчанию
-            setLanguage('ru');
-
         });
     </script>
 

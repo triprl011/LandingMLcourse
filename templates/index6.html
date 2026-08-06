@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ML-Интенсив — Старт в Data Science</title>
+    <title>ML-Интенсив — Ваш курс</title>
     <style>
         /* ===== ОСНОВНЫЕ СТИЛИ ===== */
         * {
@@ -178,18 +178,6 @@
             text-align: center;
         }
 
-        .btn-guarantee {
-            display: inline-block;
-            background: rgba(163, 230, 53, 0.1);
-            color: #a3e635;
-            padding: 12px 24px;
-            border-radius: 40px;
-            font-size: 0.85rem;
-            font-weight: 500;
-            border: 1px solid rgba(163, 230, 53, 0.2);
-            margin-top: 12px;
-        }
-
         /* ===== HERO ===== */
         .hero {
             position: relative;
@@ -294,93 +282,6 @@
             gap: 16px;
         }
 
-        .hero-stats {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            margin-top: 40px;
-            flex-wrap: wrap;
-        }
-
-        .hero-stats .stat-item {
-            text-align: center;
-        }
-
-        .hero-stats .stat-item .number {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #a3e635;
-        }
-
-        .hero-stats .stat-item .label {
-            font-size: 0.85rem;
-            color: #94a3b8;
-        }
-
-        /* ===== БЛОК "ПОЧЕМУ СЕЙЧАС" ===== */
-        .why-now-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 24px;
-            margin-top: 16px;
-        }
-
-        .why-now-item {
-            background: rgba(255, 255, 255, 0.04);
-            padding: 24px;
-            border-radius: 16px;
-            text-align: center;
-            border: 1px solid rgba(163, 230, 53, 0.1);
-            backdrop-filter: blur(4px);
-        }
-
-        .why-now-item .icon {
-            font-size: 2.2rem;
-            margin-bottom: 8px;
-        }
-
-        .why-now-item h4 {
-            color: #ffffff;
-            font-size: 1.1rem;
-            margin-bottom: 4px;
-        }
-
-        .why-now-item p {
-            color: #94a3b8;
-            font-size: 0.9rem;
-        }
-
-        /* ===== БЛОК "ЧТО ВЫ ПОЛУЧИТЕ" ===== */
-        .results-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-top: 16px;
-        }
-
-        .result-item {
-            background: rgba(255, 255, 255, 0.04);
-            padding: 20px;
-            border-radius: 12px;
-            text-align: center;
-            border-left: 3px solid #a3e635;
-        }
-
-        .result-item .emoji {
-            font-size: 1.8rem;
-        }
-
-        .result-item h4 {
-            color: #ffffff;
-            font-size: 1rem;
-            margin-top: 8px;
-        }
-
-        .result-item p {
-            color: #94a3b8;
-            font-size: 0.85rem;
-        }
-
         /* ===== БЛОК "О МЕНТОРЕ" ===== */
         .mentor-grid {
             display: grid;
@@ -429,7 +330,7 @@
             line-height: 1.6;
         }
 
-        /* ===== БЛОК С ОТЗЫВАМИ ===== */
+        /* ===== БЛОК С ОТЗЫВАМИ (растянут) ===== */
         .mentor-reviews {
             margin-top: 0;
             padding-top: 0;
@@ -881,14 +782,6 @@
             .mentor-photo img {
                 max-width: 180px;
             }
-
-            .hero-stats {
-                gap: 20px;
-            }
-
-            .hero-stats .stat-item .number {
-                font-size: 1.5rem;
-            }
         }
 
         @media (max-width: 480px) {
@@ -1004,7 +897,7 @@
     <!-- ============================================ -->
     <header class="sticky-header">
         <div class="container">
-            <a href="#" class="header-logo" data-i18n="logo">ML-Интенсив. Стажировка </a>
+            <a href="#" class="header-logo" data-i18n="logo">ML-Интенсив в IT школе</a>
             <nav class="header-nav">
                 <a href="#about" data-i18n="nav_about">О курсе</a>
                 <a href="#forwhoom" data-i18n="nav_audience">Для кого?</a>
@@ -1043,95 +936,11 @@
                 <p class="subtitle" data-i18n="hero_subtitle">
                     Освойте Data Science, у каждого свой путь.
                     Нужно поработать. Учебные проекты и кейсы,
-                    подготовка к собеседованиям и трудоустройству. Стажировка.
+                    подготовка к собеседованиям и трудоустройству.
                 </p>
                 <div class="hero-buttons">
                     <a href="https://t.me/terehinvi" target="_blank" class="btn btn-primary" data-i18n="hero_btn1">Связаться с менеджером</a>
                     <a href="#pricing" class="btn btn-outline" data-i18n="hero_btn2">Выбрать тариф</a>
-                </div>
-
-                <!-- Блок статистики для социального доказательства -->
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <div class="number">95%</div>
-                        <div class="label" data-i18n="stat1">студентов находят работу в IT</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="number">2-4</div>
-                        <div class="label" data-i18n="stat2">месяца до первого оффера</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="number">200+</div>
-                        <div class="label" data-i18n="stat3">выпускников уже работают</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- НОВЫЙ БЛОК: ПОЧЕМУ СЕЙЧАС                  -->
-    <!-- ============================================ -->
-    <section class="section" style="background: rgba(255,255,255,0.02);">
-        <div class="container">
-            <h2 class="section-title" data-i18n="whynow_title">Почему стоит начать <span style="color: #a3e635;">прямо сейчас</span></h2>
-            <p class="section-subtitle" data-i18n="whynow_subtitle">
-                Рынок ML в России стремительно растёт, а квалифицированных специалистов не хватает
-            </p>
-            <div class="why-now-grid">
-                <div class="why-now-item">
-                    <div class="icon">📈</div>
-                    <h4 data-i18n="whynow1_title">Рост зарплат +25%</h4>
-                    <p data-i18n="whynow1_desc">За последний год зарплаты ML-инженеров выросли на 25% по данным Хабр Карьеры</p>
-                </div>
-                <div class="why-now-item">
-                    <div class="icon">🏢</div>
-                    <h4 data-i18n="whynow2_title">Дефицит толковых кадров</h4>
-                    <p data-i18n="whynow2_desc">На одну вакансию Junior and Middle ML — 2-3 подходящих по уровню и компетенциям специалиста.</p>
-                </div>
-                <div class="why-now-item">
-                    <div class="icon">🚀</div>
-                    <h4 data-i18n="whynow3_title">Иммиграция специалистов</h4>
-                    <p data-i18n="whynow3_desc">Отток ML-специалистов создаёт уникальные возможности для новичков</p>
-                </div>
-                <div class="why-now-item">
-                    <div class="icon">🔄</div>
-                    <h4 data-i18n="whynow4_title">Актуальные навыки</h4>
-                    <p data-i18n="whynow4_desc">Компании переходят на российское ПО — спрос на специалистов с практическими навыками растёт</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- НОВЫЙ БЛОК: ЧТО ВЫ ПОЛУЧИТЕ               -->
-    <!-- ============================================ -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title" data-i18n="results_title">Что вы <span style="color: #a3e635;">получите</span> после курса</h2>
-            <p class="section-subtitle" data-i18n="results_subtitle">
-                Конкретные результаты, которые помогут вам найти работу
-            </p>
-            <div class="results-grid">
-                <div class="result-item">
-                    <div class="emoji">💼</div>
-                    <h4 data-i18n="result1_title">Готовое портфолио</h4>
-                    <p data-i18n="result1_desc">Проект, Знания и Умения</p>
-                </div>
-                <div class="result-item">
-                    <div class="emoji">🤖</div>
-                    <h4 data-i18n="result2_title">Навык работы с AI</h4>
-                    <p data-i18n="result2_desc">Умение использовать нейросети для ускорения работы</p>
-                </div>
-                <div class="result-item">
-                    <div class="emoji">📋</div>
-                    <h4 data-i18n="result3_title">Готовое резюме</h4>
-                    <p data-i18n="result3_desc">Резюме, которое проходит HR-скрининг</p>
-                </div>
-                <div class="result-item">
-                    <div class="emoji">🎤</div>
-                    <h4 data-i18n="result4_title">Уверенность на собесе</h4>
-                    <p data-i18n="result4_desc">Разбор реальных вопросов с собеседований</p>
                 </div>
             </div>
         </div>
@@ -1187,7 +996,7 @@
                     <img src="../static/img_1.png" alt="Фото ментора" />
                 </div>
 
-                <!-- Информация о менторе -->
+                <!-- Информация о менторе (укорочена) -->
                 <div class="mentor-info">
                     <h3 data-i18n="mentor_name">Виталий Терехов</h3>
                     <div class="mentor-title" data-i18n="mentor_title_job">Senior Data Scientist, опыт 8+ лет</div>
@@ -1197,7 +1006,7 @@
                         Учит не просто коду, а подходу к решению реальных бизнес-задач.
                     </p>
                     <p style="margin-top: 10px;" data-i18n="mentor_desc2">
-                        🎓 Ведет активный блог о Data Science и пьет чай. Применяет эффективные методы обучения с использованием философии и психологии обучения
+                        🎓 Ведет активный блог о Data Science. Применяет эффективные методы обучения с использованием философии и психологии обучения
                         для развития когнитивных навыков мозга и мышления.
                     </p>
 
@@ -1226,7 +1035,7 @@
                     </div>
                 </div>
 
-                <!-- Блок с отзывами -->
+                <!-- Блок с отзывами (растянут) -->
                 <div class="mentor-reviews">
                     <h4 data-i18n="reviews_title">⭐ Отзывы учеников</h4>
                     <div class="reviews-grid">
@@ -1327,7 +1136,7 @@
                 <div class="format-card" data-i18n="format1">
                     <h3>⏳ Длительность</h3>
                     <ul>
-                        <li><strong>Тариф 1:</strong> 1 месяц</li>
+                        <li><strong>Тариф 1:</strong> 1 месяца</li>
                         <li><strong>Тариф 2:</strong> 2 месяца (с проектом)</li>
                         <li>Начало — подготовка (математика + Python)</li>
                         <li>Основа — базовый ML + бизнес-кейсы</li>
@@ -1510,10 +1319,6 @@
                     </ul>
                     <a href="#" class="btn btn-primary btn-block" data-i18n="pricing_btn">Выбрать тариф</a>
                 </div>
-            </div>
-            <!-- Гарантия -->
-            <div style="text-align: center; margin-top: 32px;">
-                <span class="btn-guarantee">✅ Гарантия возврата — если после первого занятия поймёте, что курс не ваш</span>
             </div>
         </div>
     </section>
@@ -1780,7 +1585,7 @@
             // ==========================================
             const translations = {
                 ru: {
-                    logo: 'ML-Интенсив. Стажировка',
+                    logo: 'ML-Интенсив',
                     nav_about: 'О курсе',
                     nav_audience: 'Для кого?',
                     nav_mentor: 'Ментор',
@@ -1790,32 +1595,9 @@
                     nav_experience: 'Опыт',
                     nav_contact: 'Записаться',
                     hero_title: 'Машинное обучение<br />с нуля до профи.',
-                    hero_subtitle: 'Освойте Data Science, у каждого свой путь, но нужно поработать. Учебные проекты и кейсы, подготовка к собеседованиям и трудоустройству. Стажировка.',
+                    hero_subtitle: 'Освойте Data Science, у каждого свой путь, но нужно поработать. Учебные проекты и кейсы, подготовка к собеседованиям и трудоустройству.',
                     hero_btn1: 'Связаться с менеджером',
                     hero_btn2: 'Выбрать тариф',
-                    stat1: 'студентов находят работу в IT',
-                    stat2: 'месяца до первого оффера',
-                    stat3: 'выпускников уже работают',
-                    whynow_title: 'Почему стоит начать прямо сейчас',
-                    whynow_subtitle: 'Рынок ML в России стремительно растёт, а квалифицированных специалистов не хватает',
-                    whynow1_title: 'Рост зарплат +25%',
-                    whynow1_desc: 'За последний год зарплаты ML-инженеров выросли на 25% по данным Хабр Карьеры',
-                    whynow2_title: 'Дефицит толковых кадров',
-                    whynow2_desc: 'На одну вакансию Junior and Middle ML — 2-3 подходящих по уровню и компетенциям специалиста.',
-                    whynow3_title: 'Иммиграция специалистов',
-                    whynow3_desc: 'Отток ML-специалистов создаёт уникальные возможности для новичков',
-                    whynow4_title: 'Актуальные навыки',
-                    whynow4_desc: 'Компании переходят на российское ПО — спрос на специалистов с практическими навыками растёт',
-                    results_title: 'Что вы получите после курса',
-                    results_subtitle: 'Конкретные результаты, которые помогут вам найти работу',
-                    result1_title: 'Проект, Знания и Умения',
-                    result1_desc: 'Опыт реального проекта для резюме',
-                    result2_title: 'Навык работы с AI',
-                    result2_desc: 'Умение использовать нейросети для ускорения работы',
-                    result3_title: 'Готовое резюме',
-                    result3_desc: 'Резюме, которое проходит HR-скрининг',
-                    result4_title: 'Уверенность на собесе',
-                    result4_desc: 'Разбор реальных вопросов с собеседований',
                     audience_title: 'Для кого этот курс',
                     audience_subtitle: 'Курс подойдет тем, кто хочет войти в Data Science и применять ML в работе. Для тех кто хочет освоить фундаментальные знания и решать свои собственные задачи. Мы поможем избежать состояния фрустрации и не терять мотивацию в процессе обучения, поможем дойти до вашей цели. Но за вас никто не выучится. Нужно будет тратить время и силы, чтобы получить результат. Секретов и магии в этом нет.',
                     audience_card1: '<h3>🧑‍💻 Новички без опыта в ML</h3><p>Освоите основы машинного обучения, научитесь использовать ИИ-помощников для кода и поймете устройство ML-проектов.</p>',
@@ -1827,7 +1609,7 @@
                     mentor_name: 'Виталий Терехов',
                     mentor_title_job: 'Senior Data Scientist, опыт 8+ лет',
                     mentor_desc1: 'Автор курса и главный ментор. Работал в крупных российских и международных IT-компаниях, внедрял ML-решения для задач прогнозирования зеленой энергетики и телеком, специализируется на решении инженерных задач методами обучения с подкреплением (Reinforcement Learning). Учит не просто коду, а подходу к решению реальных бизнес-задач.',
-                    mentor_desc2: '🎓 Ведет активный блог о Data Science и пьет чай. Применяет эффективные методы обучения с использованием философии и психологии обучения для развития когнитивных навыков мозга и мышления. Нацелен на результат. Помогает студентам находить работу в IT.',
+                    mentor_desc2: '🎓 Ведет активный блог о Data Science. Применяет эффективные методы обучения с использованием философии и психологии обучения для развития когнитивных навыков мозга и мышления. Нацелен на результат. Помогает студентам находить работу в IT.',
                     assistant_name1: 'Артем',
                     assistant_title1: 'ML-engineer, ведущий курса',
                     assistant_desc1: 'Помогает с домашими заданиями, разборами кода и отвечает на вопросы в чате.',
@@ -1849,7 +1631,7 @@
                     req4: '<h4>🛠 Инструменты</h4><ul><li>установка PyCharm</li><li>настройка python окружения</li><li>Тесты кода, логирование, визуализация</li></ul>',
                     format_title: 'Формат курса',
                     format_subtitle: 'Групповые или индивидуальные занятия с ментором 2 раза в неделю. Сопровождение и направление студентов.',
-                    format1: '<h3>⏳ Длительность</h3><ul><li><strong>Тариф 1:</strong> 1 месяц</li><li><strong>Тариф 2:</strong> 2 месяца (с проектом)</li><li>Начало — подготовка (математика + Python)</li><li>Основа — базовый ML + бизнес-кейсы</li><li>По итогу — подготовка к собеседованиям</li></ul>',
+                    format1: '<h3>⏳ Длительность</h3><ul><li><strong>Тариф 1:</strong> 1 месяца</li><li><strong>Тариф 2:</strong> 2 месяца (с проектом)</li><li>Начало — подготовка (математика + Python)</li><li>Основа — базовый ML + бизнес-кейсы</li><li>По итогу — подготовка к собеседованиям</li></ul>',
                     format2: '<h3>📹 Формат занятий</h3><ul><li>Видеолекции/занятия (1,5–2,5 ч/нед)</li><li>Созвоны и встречи с ответами на вопросы</li><li>Разбор кода и алгоритмов и пайплайнов+Домашние задания</li><li>Итоговый проект для портфолио</li></ul>',
                     format3: '<h3>💬 Коммуникация</h3><ul><li>Видеовстречи: <strong>(в удобное время)</strong></li><li>Закрытый Telegram-чат группы</li><li>Telegram-канал с оповещениями</li><li>Чат выпускников после сдачи домашек</li></ul>',
                     program_title: 'Программа курса',
@@ -1898,7 +1680,7 @@
                     footer_copyright: '2022-2026 copyright ©'
                 },
                 en: {
-                    logo: 'ML-Intensive. Internship',
+                    logo: 'ML-Intensive',
                     nav_about: 'About',
                     nav_audience: 'For whom?',
                     nav_mentor: 'Mentor',
@@ -1908,32 +1690,9 @@
                     nav_experience: 'Experience',
                     nav_contact: 'Enroll',
                     hero_title: 'Machine Learning<br />from zero to pro.',
-                    hero_subtitle: 'Master Data Science, everyone has their own path, but you need to work. Hands-on projects and cases, interview preparation and job placement. Internship',
+                    hero_subtitle: 'Master Data Science, everyone has their own path, but you need to work. Hands-on projects and cases, interview preparation and job placement.',
                     hero_btn1: 'Contact manager',
                     hero_btn2: 'Choose plan',
-                    stat1: 'students find jobs in IT',
-                    stat2: 'months to first offer',
-                    stat3: 'graduates already working',
-                    whynow_title: 'Why start right now',
-                    whynow_subtitle: 'The ML market in Russia is growing rapidly, and there is a shortage of qualified specialists',
-                    whynow1_title: 'Salary growth +25%',
-                    whynow1_desc: 'Over the past year, ML engineers\' salaries have grown by 25% according to Habr Career',
-                    whynow2_title: 'Talent shortage',
-                    whynow2_desc: 'Only 2-3 candidates per Junior ML vacancy. Employers are ready to train',
-                    whynow3_title: 'Specialist emigration',
-                    whynow3_desc: 'The outflow of ML specialists creates unique opportunities for beginners',
-                    whynow4_title: 'Relevant skills',
-                    whynow4_desc: 'Companies are switching to Russian software — demand for specialists with practical skills is growing',
-                    results_title: 'What you will get after the course',
-                    results_subtitle: 'Specific results that will help you find a job',
-                    result1_title: 'Ready portfolio',
-                    result1_desc: 'Real projects for your resume on real data',
-                    result2_title: 'AI skills',
-                    result2_desc: 'Ability to use neural networks to speed up work',
-                    result3_title: 'Ready resume',
-                    result3_desc: 'A resume that passes HR screening',
-                    result4_title: 'Interview confidence',
-                    result4_desc: 'Review of real interview questions',
                     audience_title: 'Who is this course for?',
                     audience_subtitle: 'The course is for those who want to get into Data Science and apply ML at work. For those who want to master fundamental knowledge and solve their own problems. We will help you avoid frustration and not lose motivation during the learning process, we will help you reach your goal. But no one will study for you. You will need to spend time and effort to get results. There are no secrets or magic in this.',
                     audience_card1: '<h3>🧑‍💻 Beginners with no ML experience</h3><p>Learn the basics of machine learning, use AI assistants for code, and understand the structure of ML projects.</p>',

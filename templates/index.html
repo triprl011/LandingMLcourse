@@ -128,6 +128,7 @@
 
         .header-nav .btn-small:hover {
             background: #bef264;
+            color: #1a2e05;                       /* тёмно-зелёный — читается на салатовом */
             transform: translateY(-2px);
             box-shadow: 0 0 30px rgba(163, 230, 53, 0.3);
         }
@@ -1009,7 +1010,7 @@
                 <a href="#about" data-i18n="nav_about">О курсе</a>
                 <a href="#forwhoom" data-i18n="nav_audience">Для кого?</a>
                 <a href="#mentor" data-i18n="nav_mentor">Ментор</a>
-                <a href="#format" data-i18n="nav_format">Формат</a>
+                <a href="#format-study" data-i18n="nav_format">Формат</a>
                 <a href="#program" data-i18n="nav_program">Программа</a>
                 <a href="#pricing" data-i18n="nav_pricing">Тарифы</a>
                 <a href="#real-experience" data-i18n="nav_experience">Опыт</a>
@@ -1039,8 +1040,8 @@
 
         <div class="container">
             <div class="hero-content">
-                <h1 data-i18n="hero_title">Машинное обучение<br />с нуля до профи.</h1>
-                <p class="subtitle" data-i18n="hero_subtitle">
+                <h1 data-i18n="hero_title" style="line-height: 1.1">Машинное обучение<br />с нуля до профи.</h1>
+                <p class="subtitle" data-i18n="hero_subtitle" style="line-height: 1.2">
                     Освойте Data Science, у каждого свой путь.
                     Нужно поработать. Учебные проекты и кейсы,
                     подготовка к собеседованиям и трудоустройству. Стажировка.
@@ -1081,23 +1082,23 @@
             <div class="why-now-grid">
                 <div class="why-now-item">
                     <div class="icon">📈</div>
-                    <h4 data-i18n="whynow1_title">Рост зарплат +25%</h4>
-                    <p data-i18n="whynow1_desc">За последний год зарплаты ML-инженеров выросли на 25% по данным Хабр Карьеры</p>
+                    <h4 data-i18n="whynow1_title">Рост зарплат растет на +25%</h4>
+                    <p data-i18n="whynow1_desc" style="line-height: 1.3">За последний год зарплаты ML-инженеров выросли на 25% по данным Хабр Карьеры</p>
                 </div>
                 <div class="why-now-item">
                     <div class="icon">🏢</div>
                     <h4 data-i18n="whynow2_title">Дефицит толковых кадров</h4>
-                    <p data-i18n="whynow2_desc">На одну вакансию Junior and Middle ML — 2-3 подходящих по уровню и компетенциям специалиста.</p>
+                    <p data-i18n="whynow2_desc" style="line-height: 1.3">На одну вакансию Junior and Middle ML — 2-3 подходящих по уровню и компетенциям специалиста.</p>
                 </div>
                 <div class="why-now-item">
                     <div class="icon">🚀</div>
                     <h4 data-i18n="whynow3_title">Иммиграция специалистов</h4>
-                    <p data-i18n="whynow3_desc">Отток ML-специалистов создаёт уникальные возможности для новичков</p>
+                    <p data-i18n="whynow3_desc" style="line-height: 1.3">Отток ML-специалистов создаёт уникальные возможности для новичков</p>
                 </div>
                 <div class="why-now-item">
                     <div class="icon">🔄</div>
-                    <h4 data-i18n="whynow4_title">Актуальные навыки</h4>
-                    <p data-i18n="whynow4_desc">Компании переходят на российское ПО — спрос на специалистов с практическими навыками растёт</p>
+                    <h4 data-i18n="whynow4_title">Актуальные <br>навыки</h4>
+                    <p data-i18n="whynow4_desc" style="line-height: 1.3">Компании переходят на российское ПО — спрос на специалистов с практическими навыками растёт</p>
                 </div>
             </div>
         </div>
@@ -1312,11 +1313,15 @@
             </div>
         </div>
 
-        <!-- ============================================ -->
-        <!-- БЛОК 4: ФОРМАТ ОБУЧЕНИЯ                     -->
-        <!-- ============================================ -->
-        <br>
-        <br>
+    </section>
+     <!-- ============================================ -->
+    <!-- БЛОК 4: ФОРМАТ ОБУЧЕНИЯ                     -->
+    <!-- ============================================ -->
+    <section class="section" id="format-study" style="background: rgba(255,255,255,0.02);">
+        <div class="container">
+
+
+
         <div class="container">
             <h2 class="section-title" data-i18n="format_title">Формат курса</h2>
             <p class="section-subtitle" data-i18n="format_subtitle">
@@ -1353,6 +1358,7 @@
                     </ul>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -1789,8 +1795,8 @@
                     nav_pricing: 'Тарифы',
                     nav_experience: 'Опыт',
                     nav_contact: 'Записаться',
-                    hero_title: 'Машинное обучение<br />с нуля до профи.',
-                    hero_subtitle: 'Освойте Data Science, у каждого свой путь, но нужно поработать. Учебные проекты и кейсы, подготовка к собеседованиям и трудоустройству. Стажировка.',
+                    hero_title: 'Машинное обучение<br />с нуля до профи',
+                    hero_subtitle: "Освойте Data Science, у каждого свой путь, но нужно поработать<br> Учебные проекты, подготовка к собеседованиям и трудоустройству<br>Обучение в формате стажировки",
                     hero_btn1: 'Связаться с менеджером',
                     hero_btn2: 'Выбрать тариф',
                     stat1: 'студентов находят работу в IT',
@@ -1798,14 +1804,14 @@
                     stat3: 'выпускников уже работают',
                     whynow_title: 'Почему стоит начать прямо сейчас',
                     whynow_subtitle: 'Рынок ML в России стремительно растёт, а квалифицированных специалистов не хватает',
-                    whynow1_title: 'Рост зарплат +25%',
+                    whynow1_title: 'Рост зарплат<br> на +25%',
                     whynow1_desc: 'За последний год зарплаты ML-инженеров выросли на 25% по данным Хабр Карьеры',
                     whynow2_title: 'Дефицит толковых кадров',
-                    whynow2_desc: 'На одну вакансию Junior and Middle ML — 2-3 подходящих по уровню и компетенциям специалиста.',
+                    whynow2_desc: 'На одну вакансию Junior and Middle ML — 2-3 подходящих по уровню и компетенциям специалиста',
                     whynow3_title: 'Иммиграция специалистов',
                     whynow3_desc: 'Отток ML-специалистов создаёт уникальные возможности для новичков',
-                    whynow4_title: 'Актуальные навыки',
-                    whynow4_desc: 'Компании переходят на российское ПО — спрос на специалистов с практическими навыками растёт',
+                    whynow4_title: 'Актуальные<br>навыки',
+                    whynow4_desc: 'Компании переходят на российское ПО — спрос на специалистов с практическими навыками',
                     results_title: 'Что вы получите после курса',
                     results_subtitle: 'Конкретные результаты, которые помогут вам найти работу',
                     result1_title: 'Проект, Знания и Умения',
@@ -1907,8 +1913,8 @@
                     nav_pricing: 'Pricing',
                     nav_experience: 'Experience',
                     nav_contact: 'Enroll',
-                    hero_title: 'Machine Learning<br />from zero to pro.',
-                    hero_subtitle: 'Master Data Science, everyone has their own path, but you need to work. Hands-on projects and cases, interview preparation and job placement. Internship',
+                    hero_title: 'Machine Learning<br />from zero to Pro',
+                    hero_subtitle: 'Master Data Science, everyone has their own path, but you need to work<br>Hands-on projects, interview preparation and job placement<br>Internship',
                     hero_btn1: 'Contact manager',
                     hero_btn2: 'Choose plan',
                     stat1: 'students find jobs in IT',

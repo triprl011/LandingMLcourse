@@ -223,6 +223,31 @@
             font-family: 'Times New Roman', serif;
             letter-spacing: 1px;
         }
+        .module-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .module-header h3 {
+            margin: 0;
+            flex: 1;
+        }
+
+        .module-header .badge {
+            display: inline-block;
+            flex: 0 0 120px;
+            width: 120px;
+            box-sizing: border-box;
+            text-align: center;
+            padding: 4px 8px;
+            border-radius: 999px;
+            background: rgba(163, 230, 53, 0.15);
+            color: #a3e635;
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
 
         .formula:nth-child(1) { top: 5%; left: -10%; animation-duration: 25s; font-size: 2.2rem; }
         .formula:nth-child(2) { top: 15%; right: -5%; animation-duration: 30s; animation-delay: -3s; font-size: 2.8rem; }
@@ -805,6 +830,32 @@
         .footer a:hover {
             color: #a3e635;
         }
+        .module-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .module-header h3 {
+            margin: 0;
+            flex: 1;
+        }
+        .module-header > span {
+            display: inline-block;
+            flex: 0 0 120px;
+            width: 120px;
+            min-width: 120px;
+            max-width: 120px;
+            box-sizing: border-box;
+            text-align: center;
+            padding: 4px 8px;
+            border-radius: 999px;
+            background: rgba(163, 230, 53, 0.25);
+            color: #a3e635;
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
 
         /* ===== АДАПТИВ ===== */
         @media (max-width: 1024px) {
@@ -1366,114 +1417,114 @@
     <!-- БЛОК 5: ПРОГРАММА КУРСА                     -->
     <!-- ============================================ -->
     <section class="section" id="program" style="background: rgba(255,255,255,0.02);">
-        <div class="container">
-            <h2 class="section-title" data-i18n="program_title">Программа курса</h2>
-            <p class="section-subtitle" data-i18n="program_subtitle">
-                Обновленная программа с упором на практику и современные инструменты.
-            </p>
+    <div class="container">
+        <h2 class="section-title" data-i18n="program_title">Программа курса</h2>
+        <p class="section-subtitle" data-i18n="program_subtitle">
+            Обновленная программа с упором на практику и современные инструменты.
+        </p>
 
-            <div class="module" data-i18n="module1">
-                <div class="module-header">
-                    <h3>Модуль 1 — Подготовительный: Python и математика</h3>
-                    <span>База</span>
-                </div>
-                <div class="module-body">
-                    <ul>
-                        <li>Теория вероятностей</li>
-                        <li>Алгоритмы и структуры данных</li>
-                        <li>Основы программирования на Python</li>
-                    </ul>
-                    <ul>
-                        <li>Математический анализ</li>
-                        <li>Линейная алгебра и Теория вероятности</li>
-                    </ul>
-                </div>
+        <div class="module" data-i18n="module1">
+            <div class="module-header">
+                <h3>Модуль 1 — Подготовительный: Python и математика</h3>
+                <span class="badge">База</span>
             </div>
-
-            <div class="module" data-i18n="module2">
-                <div class="module-header">
-                    <h3>Модуль 2 — Алгоритмы машинного обучения</h3>
-                    <span>Основной</span>
-                </div>
-                <div class="module-body">
-                    <ul>
-                        <li>Простые методы Linear Regression </li>
-                        <li>Задачи регресессии, классификации, метрики и функции потерь</li>
-                        <li>Введение в нейронные сети</li>
-                    </ul>
-                    <ul>
-                        <li>Написание кода с нуля и разбор математики</li>
-                        <li>Упор на развитие навыков ведения проектов</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="module" data-i18n="module3">
-                <div class="module-header">
-                    <h3>Модуль 3 — Оценка качества</h3>
-                    <span>Критично</span>
-                </div>
-                <div class="module-body">
-                    <ul>
-                        <li>Подготовка данных</li>
-                        <li>Валидация моделей</li>
-                    </ul>
-                    <ul>
-                        <li>Тестирование кода и моделей (теория + практика)</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="module" data-i18n="module4">
-                <div class="module-header">
-                    <h3>Модуль 4 — Внедрение ML в бизнес</h3>
-                    <span>Практика</span>
-                </div>
-                <div class="module-body">
-                    <ul>
-                        <li>AI-ассистенты для анализа данных</li>
-                        <li>Основы MLOps для развертывания моделей</li>
-                    </ul>
-                    <ul>
-                        <li>ML System Design</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="module" data-i18n="module5">
-                <div class="module-header">
-                    <h3>Модуль 5 — Применение ML в бизнесе</h3>
-                    <span>Кейсы</span>
-                </div>
-                <div class="module-body">
-                    <ul>
-                        <li>Инженерные задачи</li>
-                        <li>Оптимизация процессов</li>
-                    </ul>
-                    <ul>
-                        <li>Видимые результаты пользы</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="module" style="border-left: 4px solid #a3e635;" data-i18n="module6">
-                <div class="module-header">
-                    <h3>Дополнительно — Подготовка к поиску работы</h3>
-                    <span>Карьера</span>
-                </div>
-                <div class="module-body">
-                    <ul>
-                        <li>Разбор типовых вопросов на собеседованиях</li>
-                        <li>Подготовка резюме</li>
-                    </ul>
-                    <ul>
-                        <li>Стратегия прохождения интервью</li>
-                        <li>Рекомендации от экспертов</li>
-                    </ul>
-                </div>
+            <div class="module-body">
+                <ul>
+                    <li>Теория вероятностей</li>
+                    <li>Алгоритмы и структуры данных</li>
+                    <li>Основы программирования на Python</li>
+                </ul>
+                <ul>
+                    <li>Математический анализ</li>
+                    <li>Линейная алгебра и Теория вероятности</li>
+                </ul>
             </div>
         </div>
-    </section>
+
+        <div class="module" data-i18n="module2">
+            <div class="module-header">
+                <h3>Модуль 2 — Алгоритмы машинного обучения</h3>
+                <span class="badge">Основной</span>
+            </div>
+            <div class="module-body">
+                <ul>
+                    <li>Простые методы Linear Regression</li>
+                    <li>Задачи регрессии, классификации, метрики и функции потерь</li>
+                    <li>Введение в нейронные сети</li>
+                </ul>
+                <ul>
+                    <li>Написание кода с нуля и разбор математики</li>
+                    <li>Упор на развитие навыков ведения проектов</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="module" data-i18n="module3">
+            <div class="module-header">
+                <h3>Модуль 3 — Оценка качества</h3>
+                <span class="badge">Критично</span>
+            </div>
+            <div class="module-body">
+                <ul>
+                    <li>Подготовка данных</li>
+                    <li>Валидация моделей</li>
+                </ul>
+                <ul>
+                    <li>Тестирование кода и моделей (теория + практика)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="module" data-i18n="module4">
+            <div class="module-header">
+                <h3>Модуль 4 — Внедрение ML в бизнес</h3>
+                <span class="badge">Практика</span>
+            </div>
+            <div class="module-body">
+                <ul>
+                    <li>AI-ассистенты для анализа данных</li>
+                    <li>Основы MLOps для развертывания моделей</li>
+                </ul>
+                <ul>
+                    <li>ML System Design</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="module" data-i18n="module5">
+            <div class="module-header">
+                <h3>Модуль 5 — Применение ML в бизнесе</h3>
+                <span class="badge">Кейсы</span>
+            </div>
+            <div class="module-body">
+                <ul>
+                    <li>Инженерные задачи</li>
+                    <li>Оптимизация процессов</li>
+                </ul>
+                <ul>
+                    <li>Видимые результаты пользы</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="module" style="border-left: 4px solid #a3e635;" data-i18n="module6">
+            <div class="module-header">
+                <h3>Дополнительно — Подготовка к поиску работы</h3>
+                <span class="badge">Карьера</span>
+            </div>
+            <div class="module-body">
+                <ul>
+                    <li>Разбор типовых вопросов на собеседованиях</li>
+                    <li>Подготовка резюме</li>
+                </ul>
+                <ul>
+                    <li>Стратегия прохождения интервью</li>
+                    <li>Рекомендации от экспертов</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- ============================================ -->
     <!-- БЛОК 6: ТАРИФЫ                              -->
